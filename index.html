@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StickFight Skin-Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="page-bg">
+    <div class="grid-glow"></div>
+    <div class="red-orb orb-one"></div>
+    <div class="gold-orb orb-two"></div>
+    <div class="red-orb orb-three"></div>
+  </div>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">THESTALLIONAIRE92 PRESENTS</div>
+      <h1>StickFight Skin-Shop</h1>
+      <p class="hero-text">
+        Kosmetische Skins für deine StickFight-Kämpfer. Kein Pay2Win.
+        Keine Vorteile. Nur Style, Aura, Trails und pure Herden-Energie.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#catalog" class="primary-btn">Skins ansehen</a>
+        <button class="secondary-btn" id="copyShopCommand">!skin-shop kopieren</button>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <strong>50</strong>
+          <span>Skins</span>
+        </div>
+        <div>
+          <strong>100%</strong>
+          <span>kosmetisch</span>
+        </div>
+        <div>
+          <strong>0</strong>
+          <span>Pay2Win</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-preview">
+      <div class="arena-card">
+        <div class="arena-topline">Live Preview</div>
+        <div class="fighter-preview">
+          <div class="fighter-aura"></div>
+          <div class="stickman">
+            <span class="head"></span>
+            <span class="body"></span>
+            <span class="arm arm-left"></span>
+            <span class="arm arm-right"></span>
+            <span class="leg leg-left"></span>
+            <span class="leg leg-right"></span>
+            <span class="sword"></span>
+          </div>
+          <div class="preview-name">NEON SAMURAI</div>
+          <div class="preview-sub">Epic Skin · 15.000 Hufeisen</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="how-to">
+      <div class="info-card">
+        <span class="info-icon">🛒</span>
+        <h2>Kaufen</h2>
+        <p>Nutze im Twitch-Chat den Kaufen-Command vom Skin.</p>
+        <code>!buyskin neon_samurai</code>
+      </div>
+
+      <div class="info-card">
+        <span class="info-icon">⚔️</span>
+        <h2>Ausrüsten</h2>
+        <p>Rüste einen gekauften Skin aus und kämpfe damit im nächsten StickFight.</p>
+        <code>!useskin neon_samurai</code>
+      </div>
+
+      <div class="info-card">
+        <span class="info-icon">✨</span>
+        <h2>Nur Optik</h2>
+        <p>Skins geben keinen Schaden, keine HP, keine Crit-Chance und keinen XP-Bonus.</p>
+        <code>Fair für die ganze Herde</code>
+      </div>
+    </section>
+
+    <section class="controls" id="catalog">
+      <div>
+        <div class="section-kicker">Katalog</div>
+        <h2>Wähle deinen Fighter-Style</h2>
+      </div>
+
+      <div class="search-wrap">
+        <input id="skinSearch" type="text" placeholder="Skin suchen, z. B. Samurai, Horror, süß..." />
+      </div>
+    </section>
+
+    <section class="filters">
+      <button class="filter-btn active" data-filter="all">Alle</button>
+      <button class="filter-btn" data-filter="Common">Common</button>
+      <button class="filter-btn" data-filter="Rare">Rare</button>
+      <button class="filter-btn" data-filter="Epic">Epic</button>
+      <button class="filter-btn" data-filter="Legendary">Legendary</button>
+      <button class="filter-btn" data-filter="Mythic">Mythic</button>
+    </section>
+
+    <section class="catalog-grid" id="skinGrid"></section>
+  </main>
+
+  <div class="toast" id="toast">Command kopiert</div>
+
+  <footer>
+    <p>
+      StickFight Skin-Shop · Skins sind rein kosmetisch · Kaufen und Ausrüsten läuft sicher über Twitch-Chat und Streamer.bot.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
