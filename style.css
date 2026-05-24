@@ -830,3 +830,834 @@ footer {
     min-height: auto;
   }
 }
+
+
+/* =========================
+   V3: EPIC / LEGENDARY / MYTHIC UPGRADE
+   Jeder hohe Skin bekommt mehr Aura, Details, Layer und Bewegung.
+========================= */
+
+.avatar-rarity-Epic,
+.avatar-rarity-Legendary,
+.avatar-rarity-Mythic {
+  transform: scale(1.08);
+}
+
+.avatar-rarity-Epic .avatar-bg,
+.avatar-rarity-Legendary .avatar-bg,
+.avatar-rarity-Mythic .avatar-bg {
+  inset: -4px;
+  opacity: 1;
+  filter: blur(5px);
+}
+
+.avatar-rarity-Epic::before,
+.avatar-rarity-Legendary::before,
+.avatar-rarity-Mythic::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border-radius: 50%;
+  background:
+    conic-gradient(from 0deg, transparent 0deg, var(--skin-color) 50deg, transparent 105deg, var(--blade, #fff) 170deg, transparent 240deg, var(--skin-color) 310deg, transparent 360deg);
+  opacity: 0.34;
+  filter: blur(1px);
+  animation: auraSpin 5s linear infinite;
+  z-index: -1;
+}
+
+.avatar-rarity-Legendary::before {
+  opacity: 0.48;
+  animation-duration: 4s;
+}
+
+.avatar-rarity-Mythic::before {
+  opacity: 0.62;
+  animation-duration: 2.6s;
+}
+
+.avatar-rarity-Epic::after,
+.avatar-rarity-Legendary::after,
+.avatar-rarity-Mythic::after {
+  content: "";
+  position: absolute;
+  inset: 22px;
+  border-radius: 50%;
+  border: 2px solid var(--skin-color);
+  box-shadow:
+    0 0 18px var(--skin-color),
+    inset 0 0 18px var(--skin-color);
+  opacity: 0.36;
+  animation: auraBreath 1.7s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+.avatar-rarity-Legendary::after {
+  inset: 16px;
+  border-width: 3px;
+  opacity: 0.46;
+}
+
+.avatar-rarity-Mythic::after {
+  inset: 10px;
+  border-width: 3px;
+  opacity: 0.58;
+}
+
+@keyframes auraSpin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes auraBreath {
+  from { transform: scale(0.86); opacity: 0.2; }
+  to { transform: scale(1.12); opacity: 0.72; }
+}
+
+.avatar-rarity-Epic .avatar-stick {
+  filter:
+    drop-shadow(0 0 13px var(--skin-color))
+    drop-shadow(0 0 22px var(--skin-color));
+}
+
+.avatar-rarity-Legendary .avatar-stick {
+  filter:
+    drop-shadow(0 0 14px var(--skin-color))
+    drop-shadow(0 0 26px var(--skin-color))
+    drop-shadow(0 0 38px rgba(255, 211, 74, 0.35));
+}
+
+.avatar-rarity-Mythic .avatar-stick {
+  filter:
+    drop-shadow(0 0 16px var(--skin-color))
+    drop-shadow(0 0 34px var(--skin-color))
+    drop-shadow(0 0 52px var(--skin-color));
+  animation: mythicHover 1.3s ease-in-out infinite alternate;
+}
+
+@keyframes mythicHover {
+  from { transform: translateY(0) scale(1.08); }
+  to { transform: translateY(-8px) scale(1.13); }
+}
+
+.avatar-stick .sword::before {
+  content: "";
+  position: absolute;
+  inset: -6px -2px;
+  border-radius: 999px;
+  background: var(--blade, #fff);
+  opacity: 0.2;
+  filter: blur(5px);
+}
+
+/* Epic individual upgrades */
+.skin-anime_swordsman .extra-1 {
+  left: -8px !important;
+  top: 45px !important;
+  width: 98px !important;
+  height: 5px !important;
+  background: #7ad7ff !important;
+  transform: rotate(-14deg) !important;
+}
+.skin-anime_swordsman .extra-2 {
+  left: -2px;
+  top: 68px;
+  width: 86px;
+  height: 4px;
+  background: #fff;
+  transform: rotate(-14deg);
+  box-shadow: 0 0 12px #7ad7ff;
+}
+.skin-anime_swordsman .extra-3 {
+  left: 2px;
+  top: 8px;
+  width: 72px;
+  height: 112px;
+  border: 3px solid rgba(122,215,255,.55);
+  border-left: 0;
+  border-radius: 50%;
+  transform: rotate(-16deg);
+  box-shadow: 0 0 18px #7ad7ff;
+}
+
+.skin-demon_student .extra-1,
+.skin-demon_student .extra-2 {
+  background: linear-gradient(#ff5cff, #7a00ff) !important;
+  height: 26px !important;
+  width: 15px !important;
+}
+.skin-demon_student .extra-3 {
+  left: -4px;
+  top: 58px;
+  width: 84px;
+  height: 70px;
+  background:
+    radial-gradient(circle at 20% 70%, rgba(185,76,255,.75), transparent 20%),
+    radial-gradient(circle at 80% 75%, rgba(255,48,79,.55), transparent 22%),
+    linear-gradient(180deg, transparent, rgba(185,76,255,.28));
+  clip-path: polygon(10% 0, 45% 25%, 25% 100%, 50% 65%, 75% 100%, 55% 25%, 90% 0);
+  opacity: 0.9;
+  filter: blur(0.2px);
+}
+
+.skin-masked_ninja .extra-1 {
+  background: #050507 !important;
+  border: 2px solid #8e8eff !important;
+  box-shadow: 0 0 14px #8e8eff !important;
+}
+.skin-masked_ninja .extra-2 {
+  left: -10px;
+  top: 72px;
+  width: 96px;
+  height: 34px;
+  background: radial-gradient(ellipse, rgba(142,142,255,.55), transparent 70%);
+  border-radius: 50%;
+  filter: blur(2px);
+}
+.skin-masked_ninja .extra-3 {
+  left: 5px;
+  top: 100px;
+  width: 66px;
+  height: 10px;
+  background: rgba(255,255,255,.45);
+  border-radius: 999px;
+  filter: blur(4px);
+}
+
+.skin-spirit_samurai .extra-1 {
+  left: 8px !important;
+  top: -8px !important;
+  width: 60px !important;
+  height: 38px !important;
+  border-width: 5px !important;
+}
+.skin-spirit_samurai .extra-2 {
+  left: -4px;
+  top: 6px;
+  width: 84px;
+  height: 112px;
+  border: 2px solid rgba(127,255,212,.4);
+  border-radius: 50%;
+  box-shadow: 0 0 18px #7fffd4;
+}
+.skin-spirit_samurai .extra-3 {
+  left: 11px;
+  top: 86px;
+  width: 56px;
+  height: 18px;
+  background: repeating-linear-gradient(90deg, rgba(127,255,212,.8) 0 8px, transparent 8px 14px);
+  border-radius: 50%;
+  transform: perspective(80px) rotateX(55deg);
+}
+
+.skin-thunder_senpai .extra-1 {
+  left: -8px !important;
+  top: 0 !important;
+  width: 42px !important;
+  height: 98px !important;
+}
+.skin-thunder_senpai .extra-2 {
+  left: 43px;
+  top: 8px;
+  width: 36px;
+  height: 88px;
+  background: #fff;
+  clip-path: polygon(55% 0,100% 0,60% 45%,92% 45%,22% 100%,48% 55%,15% 55%);
+  box-shadow: 0 0 18px #ffe600;
+}
+.skin-thunder_senpai .extra-3 {
+  left: 0;
+  top: 94px;
+  width: 80px;
+  height: 20px;
+  border: 4px solid #ffe600;
+  border-radius: 50%;
+  box-shadow: 0 0 16px #ffe600;
+}
+
+.skin-rose_assassin .extra-1 {
+  width: 26px !important;
+  height: 26px !important;
+}
+.skin-rose_assassin .extra-2,
+.skin-rose_assassin .extra-3 {
+  width: 14px;
+  height: 14px;
+  background: #ff4f8b;
+  border-radius: 70% 30% 70% 30%;
+  box-shadow: 0 0 12px #ff4f8b;
+}
+.skin-rose_assassin .extra-2 { left: 58px; top: 28px; transform: rotate(30deg); }
+.skin-rose_assassin .extra-3 { left: 10px; top: 92px; transform: rotate(-20deg); }
+
+.skin-cyber_ninja .extra-1 {
+  left: 0 !important;
+  top: 8px !important;
+  width: 78px !important;
+  height: 116px !important;
+  border: 3px dashed #00ffee !important;
+  opacity: .92 !important;
+}
+.skin-cyber_ninja .extra-2 {
+  left: -8px;
+  top: 28px;
+  width: 92px;
+  height: 6px;
+  background: #00ffee;
+  box-shadow: 0 0 14px #00ffee;
+}
+.skin-cyber_ninja .extra-3 {
+  left: -2px;
+  top: 98px;
+  width: 82px;
+  height: 4px;
+  background: #fff;
+  box-shadow: 0 0 14px #00ffee;
+}
+
+.skin-glitch_demon .extra-1,
+.skin-glitch_demon .extra-2,
+.skin-glitch_demon .extra-3 {
+  animation: glitchShift .38s steps(2) infinite;
+}
+@keyframes glitchShift {
+  0%,100% { transform: translateX(0); }
+  50% { transform: translateX(7px); }
+}
+.skin-glitch_demon .avatar-stick::before {
+  content:"";
+  position:absolute;
+  left:-6px;
+  top:0;
+  width:86px;
+  height:124px;
+  background: linear-gradient(90deg, transparent, rgba(0,229,255,.18), transparent);
+  clip-path: polygon(0 8%, 100% 0, 82% 100%, 8% 92%);
+  animation: glitchShift .5s steps(2) infinite reverse;
+}
+
+.skin-mecha_stick .extra-1 {
+  left: 10px !important;
+  top: 38px !important;
+  width: 56px !important;
+  height: 40px !important;
+  border: 4px solid #bfc7d5 !important;
+}
+.skin-mecha_stick .extra-2 {
+  left: 18px;
+  top: 80px;
+  width: 40px;
+  height: 28px;
+  border: 3px solid #6f7b8c;
+  border-radius: 6px;
+}
+.skin-mecha_stick .extra-3 {
+  left: 54px;
+  top: 44px;
+  width: 16px;
+  height: 16px;
+  background: #00e5ff;
+  border-radius: 50%;
+  box-shadow: 0 0 14px #00e5ff;
+}
+
+.skin-holo_blade .extra-1 {
+  left: -3px !important;
+  top: 5px !important;
+  width: 84px !important;
+  height: 120px !important;
+  opacity: .75 !important;
+}
+.skin-holo_blade .extra-2 {
+  left: 6px;
+  top: 15px;
+  width: 66px;
+  height: 100px;
+  border: 2px solid rgba(117,255,248,.55);
+  border-radius: 16px;
+  box-shadow: inset 0 0 18px rgba(117,255,248,.35);
+}
+.skin-holo_blade .extra-3 {
+  left: 2px;
+  top: 66px;
+  width: 74px;
+  height: 3px;
+  background: #75fff8;
+  box-shadow: 0 0 12px #75fff8;
+}
+
+.skin-void_walker .extra-1 {
+  left: -10px !important;
+  top: -6px !important;
+  width: 96px !important;
+  height: 136px !important;
+}
+.skin-void_walker .extra-2 {
+  left: -6px;
+  top: 42px;
+  width: 88px;
+  height: 42px;
+  border: 4px solid #7a2cff;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #7a2cff;
+}
+.skin-void_walker .extra-3 {
+  left: 19px;
+  top: 21px;
+  width: 40px;
+  height: 80px;
+  background: radial-gradient(ellipse, rgba(0,0,0,.75), transparent 70%);
+  filter: blur(3px);
+}
+
+.skin-bone_knight .extra-1 {
+  left: 9px !important;
+  top: 3px !important;
+  width: 58px !important;
+  height: 44px !important;
+}
+.skin-bone_knight .extra-2 {
+  left: 16px;
+  top: 47px;
+  width: 44px;
+  height: 52px;
+  border: 3px solid #e5dfcc;
+  border-radius: 10px;
+  box-shadow: 0 0 14px #e5dfcc;
+}
+.skin-bone_knight .extra-3 {
+  left: 23px;
+  top: 16px;
+  width: 8px;
+  height: 8px;
+  background: #111;
+  border-radius: 50%;
+  box-shadow: 18px 0 0 #111;
+}
+
+.skin-vampire_duelist .extra-1 {
+  left: 0 !important;
+  top: 36px !important;
+  width: 76px !important;
+  height: 84px !important;
+}
+.skin-vampire_duelist .extra-2 {
+  left: 7px;
+  top: 6px;
+  width: 64px;
+  height: 26px;
+  border-top: 5px solid #d20d36;
+  border-radius: 50%;
+  box-shadow: 0 0 14px #d20d36;
+}
+.skin-vampire_duelist .extra-3 {
+  left: 55px;
+  top: 78px;
+  width: 18px;
+  height: 28px;
+  background: #d20d36;
+  border-radius: 50% 50% 70% 30%;
+  box-shadow: 0 0 12px #d20d36;
+}
+
+.skin-werewolf_rage .extra-1,
+.skin-werewolf_rage .extra-2 {
+  height: 23px !important;
+}
+.skin-werewolf_rage .extra-3 {
+  left: -8px;
+  top: 18px;
+  width: 92px;
+  height: 92px;
+  border: 3px solid rgba(184,121,69,.65);
+  border-radius: 50%;
+  border-left-color: transparent;
+  box-shadow: 0 0 18px #b87945;
+}
+.skin-werewolf_rage .arm.right::after {
+  content:"";
+  position:absolute;
+  left:-6px;
+  top:33px;
+  width:18px;
+  height:16px;
+  background:#ffd7b4;
+  clip-path:polygon(0 0,30% 100%,50% 0,70% 100%,100% 0);
+}
+
+.skin-angelic_guardian .extra-1,
+.skin-angelic_guardian .extra-2 {
+  height: 68px !important;
+  width: 42px !important;
+}
+.skin-angelic_guardian .extra-3 {
+  left: 15px;
+  top: -14px;
+  width: 48px;
+  height: 18px;
+  border: 4px solid #fff6c8;
+  border-radius: 50%;
+  box-shadow: 0 0 18px #fff6c8;
+}
+
+/* Legendary big upgrades */
+.avatar-rarity-Legendary .extra {
+  filter: drop-shadow(0 0 12px var(--skin-color));
+}
+
+.skin-fallen_angel .extra-1,
+.skin-fallen_angel .extra-2 {
+  height: 74px !important;
+  width: 46px !important;
+}
+.skin-fallen_angel .extra-3 {
+  left: -7px;
+  top: 92px;
+  width: 92px;
+  height: 24px;
+  border: 4px solid #9c5cff;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #9c5cff;
+}
+
+.skin-gold_champion .extra-1 {
+  left: 10px !important;
+  top: -18px !important;
+  width: 58px !important;
+  height: 36px !important;
+}
+.skin-gold_champion .extra-2 {
+  left: -4px;
+  top: 70px;
+  width: 86px;
+  height: 32px;
+  border: 5px solid #ffd34a;
+  border-radius: 50%;
+  box-shadow: 0 0 22px #ffd34a;
+}
+.skin-gold_champion .extra-3 {
+  left: 4px;
+  top: 14px;
+  width: 70px;
+  height: 96px;
+  border: 2px solid rgba(255,211,74,.45);
+  border-radius: 50%;
+}
+
+.skin-blood_emperor .extra-1 {
+  left: 8px !important;
+  top: -18px !important;
+  width: 62px !important;
+  height: 40px !important;
+}
+.skin-blood_emperor .extra-2 {
+  left: -9px;
+  top: 38px;
+  width: 94px;
+  height: 84px;
+  background: radial-gradient(ellipse at 50% 100%, rgba(201,0,37,.65), transparent 72%);
+  clip-path: polygon(0 0, 35% 24%, 50% 100%, 65% 24%, 100% 0, 85% 100%, 15% 100%);
+}
+.skin-blood_emperor .extra-3 {
+  left: 4px;
+  top: 92px;
+  width: 68px;
+  height: 18px;
+  background: rgba(201,0,37,.8);
+  border-radius: 50%;
+  filter: blur(3px);
+}
+
+.skin-dragon_soul .extra-1,
+.skin-dragon_soul .extra-2 {
+  width: 52px !important;
+  height: 82px !important;
+}
+.skin-dragon_soul .extra-3 {
+  left: -4px;
+  top: 88px;
+  width: 86px;
+  height: 24px;
+  background: linear-gradient(90deg, transparent, #ff6b00, #ffd34a, transparent);
+  border-radius: 50%;
+  box-shadow: 0 0 22px #ff6b00;
+}
+
+.skin-shadow_horseman .extra-1 {
+  left: -12px !important;
+  top: 70px !important;
+  width: 100px !important;
+  height: 36px !important;
+}
+.skin-shadow_horseman .extra-2 {
+  left: 14px;
+  top: -8px;
+  width: 50px;
+  height: 34px;
+  border: 4px solid #8d5bff;
+  border-bottom: 0;
+  border-radius: 50% 50% 0 0;
+  box-shadow: 0 0 18px #8d5bff;
+}
+.skin-shadow_horseman .extra-3 {
+  left: 3px;
+  top: 98px;
+  width: 74px;
+  height: 14px;
+  background: rgba(141,91,255,.65);
+  border-radius: 50%;
+  filter: blur(3px);
+}
+
+.skin-cosmic_reaper .extra-1 {
+  width: 98px !important;
+  height: 142px !important;
+  left: -12px !important;
+  top: -12px !important;
+}
+.skin-cosmic_reaper .extra-2 {
+  left: -8px;
+  top: 18px;
+  width: 92px;
+  height: 92px;
+  border: 4px solid #6efcff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  box-shadow: 0 0 22px #6efcff;
+}
+.skin-cosmic_reaper .extra-3 {
+  left: 34px;
+  top: 2px;
+  width: 8px;
+  height: 120px;
+  background: linear-gradient(transparent, #fff, transparent);
+  opacity: .75;
+  transform: rotate(28deg);
+}
+
+.skin-neon_overlord .extra-1 {
+  width: 84px !important;
+  height: 132px !important;
+  left: -4px !important;
+  top: -4px !important;
+}
+.skin-neon_overlord .extra-2 {
+  left: -8px;
+  top: 28px;
+  width: 92px;
+  height: 5px;
+  background: #00ffee;
+  box-shadow: 0 0 16px #00ffee;
+}
+.skin-neon_overlord .extra-3 {
+  left: -8px;
+  top: 88px;
+  width: 92px;
+  height: 5px;
+  background: #fff;
+  box-shadow: 0 0 16px #00ffee;
+}
+
+.skin-rainbow_madness .extra-1 {
+  left: -3px;
+  top: 0;
+  width: 84px;
+  height: 124px;
+  border-radius: 50%;
+  background: conic-gradient(#ff304f,#ffd34a,#00ff84,#00e5ff,#a66cff,#ff304f);
+  opacity: .18;
+  animation: auraSpin 1.3s linear infinite;
+}
+.skin-rainbow_madness .extra-2,
+.skin-rainbow_madness .extra-3 {
+  width: 70px;
+  height: 6px;
+  background: linear-gradient(90deg,#ff304f,#ffd34a,#00ff84,#00e5ff,#a66cff);
+  border-radius: 999px;
+  box-shadow: 0 0 16px #ffd34a;
+}
+.skin-rainbow_madness .extra-2 { left: 4px; top: 40px; transform: rotate(18deg); }
+.skin-rainbow_madness .extra-3 { left: 4px; top: 82px; transform: rotate(-18deg); }
+
+.skin-kawaii_destroyer .extra-1,
+.skin-kawaii_destroyer .extra-2 {
+  width: 18px !important;
+  height: 18px !important;
+}
+.skin-kawaii_destroyer .extra-3 {
+  left: -7px;
+  top: 8px;
+  width: 92px;
+  height: 112px;
+  background:
+    radial-gradient(circle at 15% 20%, #ff9fe8 0 5px, transparent 6px),
+    radial-gradient(circle at 80% 36%, #ffd34a 0 5px, transparent 6px),
+    radial-gradient(circle at 22% 78%, #00e5ff 0 4px, transparent 5px);
+  opacity: .85;
+}
+
+.skin-herd_guardian .extra-1 {
+  left: 4px !important;
+  top: -2px !important;
+  width: 70px !important;
+  height: 52px !important;
+}
+.skin-herd_guardian .extra-2 {
+  left: -8px;
+  top: 78px;
+  width: 94px;
+  height: 32px;
+  border: 5px solid #ffd34a;
+  border-radius: 50%;
+  box-shadow: 0 0 22px #ffd34a;
+}
+.skin-herd_guardian .extra-3 {
+  left: -12px;
+  top: 16px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba(255,211,74,.5);
+  border-radius: 50%;
+}
+
+/* Mythic insane upgrades */
+.avatar-rarity-Mythic .extra {
+  filter: drop-shadow(0 0 16px var(--skin-color));
+}
+
+.skin-red_glitch_king .extra-1 {
+  left: 4px !important;
+  top: -22px !important;
+  width: 70px !important;
+  height: 44px !important;
+}
+.skin-red_glitch_king .extra-2 {
+  left: -12px !important;
+  top: 55px !important;
+  width: 104px !important;
+  height: 8px !important;
+}
+.skin-red_glitch_king .extra-3 {
+  left: -6px;
+  top: 90px;
+  width: 92px;
+  height: 7px;
+  background: #fff;
+  box-shadow: 0 0 20px #fff;
+  animation: glitchShift .28s steps(2) infinite reverse;
+}
+.skin-red_glitch_king .avatar-stick::after {
+  content:"";
+  position:absolute;
+  inset:-12px;
+  border:3px solid rgba(255,48,79,.65);
+  border-radius:18px;
+  box-shadow:0 0 26px #ff304f, inset 0 0 18px rgba(0,229,255,.28);
+  animation: glitchShift .4s steps(2) infinite;
+}
+
+.skin-nightmare_clown .extra-1 {
+  left: 4px !important;
+  top: -18px !important;
+  width: 68px !important;
+  height: 28px !important;
+}
+.skin-nightmare_clown .extra-2 {
+  left: 12px !important;
+  top: 18px !important;
+  width: 52px !important;
+  height: 18px !important;
+  border-bottom-width: 5px !important;
+}
+.skin-nightmare_clown .extra-3 {
+  left: -4px;
+  top: 70px;
+  width: 84px;
+  height: 48px;
+  background: radial-gradient(ellipse, rgba(255,23,71,.75), transparent 70%);
+  border-radius: 50%;
+  filter: blur(2px);
+}
+
+.skin-celestial_samurai .extra-1 {
+  left: -18px !important;
+  top: -18px !important;
+  width: 114px !important;
+  height: 154px !important;
+}
+.skin-celestial_samurai .extra-2 {
+  left: 6px !important;
+  top: -12px !important;
+  width: 66px !important;
+  height: 40px !important;
+}
+.skin-celestial_samurai .extra-3 {
+  left: -6px;
+  top: 74px;
+  width: 90px;
+  height: 28px;
+  border: 4px solid #ffd34a;
+  border-radius: 50%;
+  box-shadow: 0 0 24px #ffd34a;
+}
+
+.skin-golden_mustang .extra-1 {
+  left: -14px !important;
+  top: 72px !important;
+  width: 106px !important;
+  height: 38px !important;
+}
+.skin-golden_mustang .extra-2 {
+  left: 7px !important;
+  top: -20px !important;
+  width: 64px !important;
+  height: 40px !important;
+}
+.skin-golden_mustang .extra-3 {
+  left: -10px;
+  top: 2px;
+  width: 98px;
+  height: 126px;
+  border: 3px solid rgba(255,211,74,.55);
+  border-radius: 50%;
+  box-shadow: 0 0 28px #ffd34a;
+}
+
+.skin-the_final_boss .avatar-stick {
+  transform: scale(1.26) !important;
+}
+.skin-the_final_boss .extra-1 {
+  left: -20px !important;
+  top: -8px !important;
+  width: 116px !important;
+  height: 142px !important;
+  border-width: 6px !important;
+}
+.skin-the_final_boss .extra-2 {
+  left: 3px !important;
+  top: -28px !important;
+  width: 74px !important;
+  height: 46px !important;
+}
+.skin-the_final_boss .extra-3 {
+  left: -14px !important;
+  top: 62px !important;
+  width: 106px !important;
+  height: 9px !important;
+}
+.skin-the_final_boss .avatar-stick::before {
+  content:"";
+  position:absolute;
+  left:-32px;
+  top:-28px;
+  width:140px;
+  height:170px;
+  background:
+    radial-gradient(circle at 50% 35%, rgba(255,0,60,.46), transparent 32%),
+    conic-gradient(from 45deg, transparent, rgba(255,0,60,.44), transparent, rgba(255,255,255,.18), transparent);
+  border-radius:32px;
+  z-index:-2;
+  filter: blur(1px);
+  animation:auraSpin 2.2s linear infinite;
+}

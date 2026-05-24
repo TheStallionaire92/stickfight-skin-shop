@@ -21,21 +21,21 @@ const skins = [
   { id: "plague_doctor", name: "Pestdoktor", category: "Horror", rarity: "Rare", price: 9000, desc: "Düsterer Pestdoktor-Look mit Schnabelmaske." },
   { id: "arcade_knight", name: "Arcade-Ritter", category: "Retro", rarity: "Rare", price: 9000, desc: "Retro-Pixel-Style mit 8-Bit Treffer-Effekt." },
 
-  { id: "anime_swordsman", name: "Anime-Schwertkämpfer", category: "Anime", rarity: "Epic", price: 12000, desc: "Dynamischer Anime-Kämpfer mit schnellen Dash-Linien." },
-  { id: "demon_student", name: "Dämonenschüler", category: "Anime/Dark", rarity: "Epic", price: 13000, desc: "Dunkler Schuluniform-Vibe mit Dämonenhörnern." },
-  { id: "masked_ninja", name: "Maskierter Ninja", category: "Anime", rarity: "Epic", price: 14000, desc: "Ninja-Style mit Schattenmaske und Rauchpartikeln." },
-  { id: "spirit_samurai", name: "Geister-Samurai", category: "Anime/Fantasy", rarity: "Epic", price: 15000, desc: "Samurai-Vibe mit Geisterhelm und Schwertspur." },
-  { id: "thunder_senpai", name: "Donner-Senpai", category: "Anime/Lustig", rarity: "Epic", price: 15000, desc: "Anime-Drama, Blitz-Effekt und komplett übertriebener Style." },
-  { id: "rose_assassin", name: "Rosen-Assassine", category: "Elegant", rarity: "Epic", price: 16000, desc: "Eleganter Assassinen-Look mit rotem Rosenpartikel." },
-  { id: "cyber_ninja", name: "Cyber Ninja", category: "Cyberpunk", rarity: "Epic", price: 18000, desc: "Cyberpunk-Ninja mit Holo-Rahmen und Glitchtrail." },
-  { id: "glitch_demon", name: "Glitch Demon", category: "Cyber/Horror", rarity: "Epic", price: 20000, desc: "Verbuggte Dämonen-Aura mit digitalen Störungen." },
-  { id: "mecha_stick", name: "Mecha Stickfighter", category: "Sci-Fi", rarity: "Epic", price: 20000, desc: "Mechanischer Fighter mit Metallpanzer und Servo-Partikeln." },
-  { id: "holo_blade", name: "Holo Blade", category: "Sci-Fi", rarity: "Epic", price: 22000, desc: "Holografischer Skin mit futuristischer Lichtklinge." },
-  { id: "void_walker", name: "Void Walker", category: "Dark Fantasy", rarity: "Epic", price: 24000, desc: "Leerenschatten und schwarzer Nebel für düstere Auftritte." },
-  { id: "bone_knight", name: "Knochenritter", category: "Horror/Fantasy", rarity: "Epic", price: 25000, desc: "Knochiger Ritter-Look mit bleicher Totenkopf-Rüstung." },
-  { id: "vampire_duelist", name: "Vampir-Duellant", category: "Horror/Edel", rarity: "Epic", price: 26000, desc: "Edler Vampirstyle mit rotem Cape-Vibe." },
-  { id: "werewolf_rage", name: "Werwolf-Raserei", category: "Horror", rarity: "Epic", price: 28000, desc: "Wilde Rage-Aura mit Ohren, Klauen und Mond-Effekt." },
-  { id: "angelic_guardian", name: "Himmlischer Wächter", category: "Fantasy", rarity: "Epic", price: 30000, desc: "Heller Wächter-Look mit leuchtenden Flügeln." },
+  { id: "anime_swordsman", name: "Anime-Schwertkämpfer", category: "Anime", rarity: "Epic", price: 12000, desc: "Anime-Kämpfer mit Speed-Linien, Energie-Ring und leuchtender Fokus-Aura." },
+  { id: "demon_student", name: "Dämonenschüler", category: "Anime/Dark", rarity: "Epic", price: 13000, desc: "Dämonische Aura, Hörner, Schattenflammen und violetter Rage-Glow." },
+  { id: "masked_ninja", name: "Maskierter Ninja", category: "Anime", rarity: "Epic", price: 14000, desc: "Maskierter Ninja mit Rauchwolke, Augenband und dunklem Stealth-Glow." },
+  { id: "spirit_samurai", name: "Geister-Samurai", category: "Anime/Fantasy", rarity: "Epic", price: 15000, desc: "Geister-Samurai mit Helm, Runen-Kreis und spiritueller Flammen-Aura." },
+  { id: "thunder_senpai", name: "Donner-Senpai", category: "Anime/Lustig", rarity: "Epic", price: 15000, desc: "Donner-Aura mit Blitzkrone, Schockwelle und grellen Speed-Effekten." },
+  { id: "rose_assassin", name: "Rosen-Assassine", category: "Elegant", rarity: "Epic", price: 16000, desc: "Rosen-Aura, Blütenpartikel und elegante Assassinen-Schatten." },
+  { id: "cyber_ninja", name: "Cyber Ninja", category: "Cyberpunk", rarity: "Epic", price: 18000, desc: "Cyber-Ninja mit Holo-Käfig, Scanlinien, Pixelglitch und Neon-Trail." },
+  { id: "glitch_demon", name: "Glitch Demon", category: "Cyber/Horror", rarity: "Epic", price: 20000, desc: "Dämonischer Glitch-Körper mit roten Fehlerbalken und Cyber-Flimmern." },
+  { id: "mecha_stick", name: "Mecha Stickfighter", category: "Sci-Fi", rarity: "Epic", price: 20000, desc: "Mecha-Rüstung mit Brustpanzer, Gelenken, Servo-Licht und Metallglow." },
+  { id: "holo_blade", name: "Holo Blade", category: "Sci-Fi", rarity: "Epic", price: 22000, desc: "Hologramm-Kapsel, Neonrahmen und transparente Sci-Fi-Lichtklinge." },
+  { id: "void_walker", name: "Void Walker", category: "Dark Fantasy", rarity: "Epic", price: 24000, desc: "Void-Aura mit Portalringen, dunklem Nebel und lila Riss-Effekt." },
+  { id: "bone_knight", name: "Knochenritter", category: "Horror/Fantasy", rarity: "Epic", price: 25000, desc: "Knochenrüstung, Totenschädel-Helm und bleiche Friedhofs-Aura." },
+  { id: "vampire_duelist", name: "Vampir-Duellant", category: "Horror/Edel", rarity: "Epic", price: 26000, desc: "Vampir-Duellant mit Cape, Blutmond-Aura und edlem roten Schwertschein." },
+  { id: "werewolf_rage", name: "Werwolf-Raserei", category: "Horror", rarity: "Epic", price: 28000, desc: "Werwolf-Rage mit Klauen, Ohren, Mondkreis und wilder Kratz-Aura." },
+  { id: "angelic_guardian", name: "Himmlischer Wächter", category: "Fantasy", rarity: "Epic", price: 30000, desc: "Himmlischer Wächter mit Flügeln, Halo und sanfter Lichtbarriere." },
 
   { id: "fallen_angel", name: "Gefallener Engel", category: "Dark Fantasy", rarity: "Legendary", price: 40000, desc: "Dunkle Flügel-Aura und himmlisch kaputter Style." },
   { id: "gold_champion", name: "Gold Champion", category: "Prestige", rarity: "Legendary", price: 50000, desc: "Goldener Prestige-Skin mit Siegerkrone." },
@@ -93,9 +93,9 @@ async function copyText(text) {
   }
 }
 
-function createAvatar(skinId) {
+function createAvatar(skinId, rarity = "") {
   return `
-    <div class="avatar skin-${skinId}">
+    <div class="avatar skin-${skinId} avatar-rarity-${rarity}">
       <div class="avatar-bg"></div>
       <div class="avatar-stick">
         <span class="part head"></span>
@@ -144,7 +144,7 @@ function renderSkins() {
       <div class="skin-rarity">${skin.rarity}</div>
 
       <div class="skin-figure">
-        ${createAvatar(skin.id)}
+        ${createAvatar(skin.id, skin.rarity)}
       </div>
 
       <h3 class="skin-name">${skin.name}</h3>

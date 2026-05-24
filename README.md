@@ -1,12 +1,10 @@
-# StickFight Skin-Shop v2
+# StickFight Skin-Shop v3
 
-Überarbeitete Version: Jeder Skin hat jetzt eigene Farben, eigene optische Details und eigene Extras.
-Die Seltenheit steuert nur noch Badge/Rahmen, nicht mehr den Look des Fighters.
-
-## Dateien
-- `index.html`
-- `style.css`
-- `script.js`
+Überarbeitete Version:
+- Epic, Legendary und Mythic Skins haben deutlich stärkere Aura
+- Jeder hohe Skin hat eigene Extra-Layer, Ringe, Flügel, Kronen, Glitches, Portale oder Partikel
+- Commands brechen sauber um und werden nicht mehr hässlich abgeschnitten
+- Skins bleiben 100% kosmetisch
 
 ## Update auf GitHub
 Alte `index.html`, `style.css`, `script.js` durch diese Dateien ersetzen.
