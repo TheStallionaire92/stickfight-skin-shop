@@ -1661,3 +1661,195 @@ footer {
   filter: blur(1px);
   animation:auraSpin 2.2s linear infinite;
 }
+
+
+/* =========================
+   V4: BLACK OUTLINE / AURA READABILITY FIX
+   Dünne schwarze Kontur für Körper, Extras und Schwerter.
+   Aura bleibt stark, aber der Skin bleibt klar erkennbar.
+========================= */
+
+.avatar-stick {
+  filter:
+    drop-shadow(0 0 2px #000)
+    drop-shadow(0 0 5px #000)
+    drop-shadow(0 0 13px var(--skin-color));
+}
+
+.avatar-rarity-Epic .avatar-stick {
+  filter:
+    drop-shadow(0 0 2px #000)
+    drop-shadow(0 0 5px #000)
+    drop-shadow(0 0 13px var(--skin-color))
+    drop-shadow(0 0 20px var(--skin-color)) !important;
+}
+
+.avatar-rarity-Legendary .avatar-stick {
+  filter:
+    drop-shadow(0 0 2px #000)
+    drop-shadow(0 0 6px #000)
+    drop-shadow(0 0 14px var(--skin-color))
+    drop-shadow(0 0 24px var(--skin-color)) !important;
+}
+
+.avatar-rarity-Mythic .avatar-stick {
+  filter:
+    drop-shadow(0 0 3px #000)
+    drop-shadow(0 0 7px #000)
+    drop-shadow(0 0 16px var(--skin-color))
+    drop-shadow(0 0 28px var(--skin-color)) !important;
+}
+
+/* Schwarzer Außenrand für Stick-Körperteile */
+.avatar-stick .body,
+.avatar-stick .arm,
+.avatar-stick .leg {
+  outline: 2px solid rgba(0, 0, 0, 0.95);
+  outline-offset: 1px;
+}
+
+/* Kopf braucht Kontur innen/außen, weil er aus border besteht */
+.avatar-stick .head {
+  box-shadow:
+    0 0 0 3px rgba(0, 0, 0, 0.95),
+    inset 0 0 0 2px rgba(0, 0, 0, 0.75),
+    0 0 14px var(--skin-color) !important;
+}
+
+/* Schwert besser lesbar */
+.avatar-stick .sword {
+  outline: 2px solid rgba(0, 0, 0, 0.96);
+  outline-offset: 1px;
+  box-shadow:
+    0 0 0 2px rgba(0, 0, 0, 0.95),
+    0 0 10px var(--blade, #fff),
+    0 0 18px var(--skin-color) !important;
+}
+
+.avatar-stick .sword::before {
+  opacity: 0.13 !important;
+}
+
+/* Extras bekommen ebenfalls klare Kante */
+.avatar-stick .extra {
+  filter:
+    drop-shadow(0 0 2px #000)
+    drop-shadow(0 0 4px #000)
+    drop-shadow(0 0 10px var(--skin-color)) !important;
+}
+
+/* Auren etwas zurücknehmen, damit sie nicht alles auffressen */
+.avatar-rarity-Epic::before {
+  opacity: 0.24 !important;
+  filter: blur(1px);
+}
+
+.avatar-rarity-Legendary::before {
+  opacity: 0.30 !important;
+  filter: blur(1.5px);
+}
+
+.avatar-rarity-Mythic::before {
+  opacity: 0.36 !important;
+  filter: blur(2px);
+}
+
+.avatar-rarity-Epic::after {
+  opacity: 0.26 !important;
+}
+
+.avatar-rarity-Legendary::after {
+  opacity: 0.31 !important;
+}
+
+.avatar-rarity-Mythic::after {
+  opacity: 0.36 !important;
+}
+
+/* Glow-Kuppel schwächer, damit Figuren sichtbar bleiben */
+.avatar-rarity-Epic .avatar-bg {
+  opacity: 0.62 !important;
+  filter: blur(8px) !important;
+}
+
+.avatar-rarity-Legendary .avatar-bg {
+  opacity: 0.68 !important;
+  filter: blur(9px) !important;
+}
+
+.avatar-rarity-Mythic .avatar-bg {
+  opacity: 0.72 !important;
+  filter: blur(10px) !important;
+}
+
+/* Große Rahmen/Layers nicht mehr komplett deckend */
+.skin-the_final_boss .extra-1,
+.skin-red_glitch_king .extra-1,
+.skin-gold_champion .extra-2,
+.skin-golden_mustang .extra-3,
+.skin-celestial_samurai .extra-3,
+.skin-neon_overlord .extra-1,
+.skin-holo_blade .extra-1,
+.skin-cyber_ninja .extra-1 {
+  opacity: 0.72;
+}
+
+/* Massive Mythic-Auren nochmal entschärfen */
+.skin-the_final_boss .avatar-stick::before,
+.skin-red_glitch_king .avatar-stick::after {
+  opacity: 0.48;
+}
+
+/* Kanten für spezielle farbige Extras */
+.skin-rainbow_madness .avatar-stick .part {
+  outline: 2px solid rgba(0,0,0,0.95);
+  outline-offset: 1px;
+}
+
+.skin-rainbow_madness .head {
+  box-shadow:
+    0 0 0 3px rgba(0,0,0,0.95),
+    inset 0 0 0 2px rgba(0,0,0,0.75),
+    0 0 14px #ffd34a !important;
+}
+
+/* Karten-Aura minimal dunkler im Avatarbereich für Kontrast */
+.skin-figure::after {
+  content: "";
+  position: absolute;
+  width: 126px;
+  height: 126px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,0,0,0.32), transparent 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.avatar {
+  z-index: 1;
+}
+
+/* Extra-Kontur bei sehr hellen gelben Skins */
+.skin-gold_champion .avatar-stick .part,
+.skin-golden_mustang .avatar-stick .part,
+.skin-celestial_samurai .avatar-stick .part,
+.skin-herd_guardian .avatar-stick .part {
+  outline-color: rgba(0,0,0,1);
+}
+
+.skin-gold_champion .head,
+.skin-golden_mustang .head,
+.skin-celestial_samurai .head,
+.skin-herd_guardian .head {
+  box-shadow:
+    0 0 0 4px rgba(0,0,0,0.98),
+    inset 0 0 0 2px rgba(0,0,0,0.8),
+    0 0 16px var(--skin-color) !important;
+}
+
+/* Bessere Kontur für Text auf sehr heller Aura */
+.skin-name {
+  text-shadow:
+    0 2px 0 rgba(0,0,0,0.95),
+    0 0 8px rgba(0,0,0,0.9);
+}
