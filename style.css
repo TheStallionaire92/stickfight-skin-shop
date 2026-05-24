@@ -1853,3 +1853,47 @@ footer {
     0 2px 0 rgba(0,0,0,0.95),
     0 0 8px rgba(0,0,0,0.9);
 }
+
+
+/* =========================
+   HERO PREVIEW FIX
+   Startseite zeigt jetzt den Celestial-Samurai-Skin korrekt.
+========================= */
+
+.hero-avatar {
+  width: 210px;
+  height: 210px;
+  margin-top: 10px;
+  transform: scale(1.28);
+}
+
+.hero-avatar .avatar-stick {
+  left: 66px;
+  top: 36px;
+}
+
+.hero-avatar.avatar-rarity-Mythic::before {
+  opacity: 0.28 !important;
+}
+
+.hero-avatar.avatar-rarity-Mythic::after {
+  opacity: 0.30 !important;
+}
+
+.hero-avatar .avatar-bg {
+  opacity: 0.45 !important;
+}
+
+.hero-avatar .extra {
+  filter:
+    drop-shadow(0 0 2px #000)
+    drop-shadow(0 0 5px #000)
+    drop-shadow(0 0 10px var(--skin-color)) !important;
+}
+
+.hero-avatar .head {
+  box-shadow:
+    0 0 0 4px rgba(0,0,0,0.98),
+    inset 0 0 0 2px rgba(0,0,0,0.8),
+    0 0 16px var(--skin-color) !important;
+}
