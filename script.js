@@ -7,7 +7,7 @@ const skins = [
   { id: "hoodie_shadow", name: "Hoodie Schatten", category: "Urban", rarity: "Common", price: 2500, desc: "Dunkler Hoodie-Style mit dezenter Schatten-Aura." },
   { id: "comic_hero", name: "Comic-Held", category: "Lustig", rarity: "Common", price: 2500, desc: "Bunter Comic-Look mit Pop-Effekt beim Angriff." },
   { id: "tiny_goblin", name: "Kleiner Goblin", category: "Fantasy", rarity: "Common", price: 3000, desc: "Frecher Goblin-Style mit giftigem Miniglow." },
-  { id: "cute_bunny", name: "Süßer Hase", category: "Süß", rarity: "Common", price: 3000, desc: "Niedlicher Hasen-Look mit Herzchen-Partikeln." },
+  { id: "cute_bunny", name: "Süßer Hase", category: "Süß", rarity: "Common", price: 3000, desc: "Niedlicher Hasen-Look mit Hasenohren und Herzchen-Vibe." },
   { id: "banana_warrior", name: "Bananenkrieger", category: "Lustig", rarity: "Common", price: 3500, desc: "Absurder gelber Krieger mit Cartoon-Flair." },
 
   { id: "blood_blade", name: "Blood Blade", category: "Horror", rarity: "Rare", price: 5000, desc: "Blutiger Schwerttrail und roter Horror-Glow." },
@@ -15,32 +15,32 @@ const skins = [
   { id: "ice_stickman", name: "Eis-Krieger", category: "Elementar", rarity: "Rare", price: 6500, desc: "Frostiger Skin mit Eissplitter-Trail." },
   { id: "fire_runner", name: "Feuerläufer", category: "Elementar", rarity: "Rare", price: 6500, desc: "Feurige Spuren und heißer Schwertglow." },
   { id: "storm_slasher", name: "Sturm-Schlitzer", category: "Elementar", rarity: "Rare", price: 7000, desc: "Blitzpartikel und stürmischer Dash-Look." },
-  { id: "shadow_cat", name: "Schattenkatze", category: "Süß/Dark", rarity: "Rare", price: 7500, desc: "Süßer, dunkler Katzenstyle mit lila Augen-Glow." },
-  { id: "clown_blade", name: "Messer-Clown", category: "Horror/Lustig", rarity: "Rare", price: 8000, desc: "Unheimlich-lustiger Clown-Look mit roten Pop-Effekten." },
-  { id: "pumpkin_reaper", name: "Kürbis-Schnitter", category: "Horror", rarity: "Rare", price: 8500, desc: "Halloween-Style mit Kürbis-Aura und dunklem Trail." },
-  { id: "plague_doctor", name: "Pestdoktor", category: "Horror", rarity: "Rare", price: 9000, desc: "Düsterer Pestdoktor-Look mit Nebel-Partikeln." },
+  { id: "shadow_cat", name: "Schattenkatze", category: "Süß/Dark", rarity: "Rare", price: 7500, desc: "Süßer, dunkler Katzenstyle mit lila Ohren-Glow." },
+  { id: "clown_blade", name: "Messer-Clown", category: "Horror/Lustig", rarity: "Rare", price: 8000, desc: "Unheimlich-lustiger Clown-Look mit rotem Pop-Effekt." },
+  { id: "pumpkin_reaper", name: "Kürbis-Schnitter", category: "Horror", rarity: "Rare", price: 8500, desc: "Halloween-Style mit Kürbis-Kopf und dunklem Trail." },
+  { id: "plague_doctor", name: "Pestdoktor", category: "Horror", rarity: "Rare", price: 9000, desc: "Düsterer Pestdoktor-Look mit Schnabelmaske." },
   { id: "arcade_knight", name: "Arcade-Ritter", category: "Retro", rarity: "Rare", price: 9000, desc: "Retro-Pixel-Style mit 8-Bit Treffer-Effekt." },
 
   { id: "anime_swordsman", name: "Anime-Schwertkämpfer", category: "Anime", rarity: "Epic", price: 12000, desc: "Dynamischer Anime-Kämpfer mit schnellen Dash-Linien." },
-  { id: "demon_student", name: "Dämonenschüler", category: "Anime/Dark", rarity: "Epic", price: 13000, desc: "Dunkler Schuluniform-Vibe mit Dämonen-Aura." },
-  { id: "masked_ninja", name: "Maskierter Ninja", category: "Anime", rarity: "Epic", price: 14000, desc: "Ninja-Style mit Schatten-Dash und Rauchpartikeln." },
-  { id: "spirit_samurai", name: "Geister-Samurai", category: "Anime/Fantasy", rarity: "Epic", price: 15000, desc: "Samurai-Vibe mit Geisterflamme und Schwertspur." },
+  { id: "demon_student", name: "Dämonenschüler", category: "Anime/Dark", rarity: "Epic", price: 13000, desc: "Dunkler Schuluniform-Vibe mit Dämonenhörnern." },
+  { id: "masked_ninja", name: "Maskierter Ninja", category: "Anime", rarity: "Epic", price: 14000, desc: "Ninja-Style mit Schattenmaske und Rauchpartikeln." },
+  { id: "spirit_samurai", name: "Geister-Samurai", category: "Anime/Fantasy", rarity: "Epic", price: 15000, desc: "Samurai-Vibe mit Geisterhelm und Schwertspur." },
   { id: "thunder_senpai", name: "Donner-Senpai", category: "Anime/Lustig", rarity: "Epic", price: 15000, desc: "Anime-Drama, Blitz-Effekt und komplett übertriebener Style." },
-  { id: "rose_assassin", name: "Rosen-Assassine", category: "Elegant", rarity: "Epic", price: 16000, desc: "Eleganter Assassinen-Look mit roten Rosenpartikeln." },
-  { id: "cyber_ninja", name: "Cyber Ninja", category: "Cyberpunk", rarity: "Epic", price: 18000, desc: "Cyberpunk-Ninja mit Holo-Klinge und Glitchtrail." },
+  { id: "rose_assassin", name: "Rosen-Assassine", category: "Elegant", rarity: "Epic", price: 16000, desc: "Eleganter Assassinen-Look mit rotem Rosenpartikel." },
+  { id: "cyber_ninja", name: "Cyber Ninja", category: "Cyberpunk", rarity: "Epic", price: 18000, desc: "Cyberpunk-Ninja mit Holo-Rahmen und Glitchtrail." },
   { id: "glitch_demon", name: "Glitch Demon", category: "Cyber/Horror", rarity: "Epic", price: 20000, desc: "Verbuggte Dämonen-Aura mit digitalen Störungen." },
-  { id: "mecha_stick", name: "Mecha Stickfighter", category: "Sci-Fi", rarity: "Epic", price: 20000, desc: "Mechanischer Fighter mit Metallglow und Servo-Partikeln." },
+  { id: "mecha_stick", name: "Mecha Stickfighter", category: "Sci-Fi", rarity: "Epic", price: 20000, desc: "Mechanischer Fighter mit Metallpanzer und Servo-Partikeln." },
   { id: "holo_blade", name: "Holo Blade", category: "Sci-Fi", rarity: "Epic", price: 22000, desc: "Holografischer Skin mit futuristischer Lichtklinge." },
   { id: "void_walker", name: "Void Walker", category: "Dark Fantasy", rarity: "Epic", price: 24000, desc: "Leerenschatten und schwarzer Nebel für düstere Auftritte." },
-  { id: "bone_knight", name: "Knochenritter", category: "Horror/Fantasy", rarity: "Epic", price: 25000, desc: "Knochiger Ritter-Look mit bleicher Aura." },
+  { id: "bone_knight", name: "Knochenritter", category: "Horror/Fantasy", rarity: "Epic", price: 25000, desc: "Knochiger Ritter-Look mit bleicher Totenkopf-Rüstung." },
   { id: "vampire_duelist", name: "Vampir-Duellant", category: "Horror/Edel", rarity: "Epic", price: 26000, desc: "Edler Vampirstyle mit rotem Cape-Vibe." },
-  { id: "werewolf_rage", name: "Werwolf-Raserei", category: "Horror", rarity: "Epic", price: 28000, desc: "Wilde Rage-Aura mit Krallen- und Mond-Effekt." },
-  { id: "angelic_guardian", name: "Himmlischer Wächter", category: "Fantasy", rarity: "Epic", price: 30000, desc: "Heller Wächter-Look mit sanfter Lichtaura." },
+  { id: "werewolf_rage", name: "Werwolf-Raserei", category: "Horror", rarity: "Epic", price: 28000, desc: "Wilde Rage-Aura mit Ohren, Klauen und Mond-Effekt." },
+  { id: "angelic_guardian", name: "Himmlischer Wächter", category: "Fantasy", rarity: "Epic", price: 30000, desc: "Heller Wächter-Look mit leuchtenden Flügeln." },
 
   { id: "fallen_angel", name: "Gefallener Engel", category: "Dark Fantasy", rarity: "Legendary", price: 40000, desc: "Dunkle Flügel-Aura und himmlisch kaputter Style." },
-  { id: "gold_champion", name: "Gold Champion", category: "Prestige", rarity: "Legendary", price: 50000, desc: "Goldener Prestige-Skin für echte Arena-Gewinner." },
-  { id: "blood_emperor", name: "Blutkaiser", category: "Horror/Prestige", rarity: "Legendary", price: 55000, desc: "Kaiserlicher Horror-Look mit blutroter Dominanz." },
-  { id: "dragon_soul", name: "Drachenseele", category: "Fantasy", rarity: "Legendary", price: 60000, desc: "Drachen-Aura, Flammenpartikel und epischer Schwertglow." },
+  { id: "gold_champion", name: "Gold Champion", category: "Prestige", rarity: "Legendary", price: 50000, desc: "Goldener Prestige-Skin mit Siegerkrone." },
+  { id: "blood_emperor", name: "Blutkaiser", category: "Horror/Prestige", rarity: "Legendary", price: 55000, desc: "Kaiserlicher Horror-Look mit blutroter Krone." },
+  { id: "dragon_soul", name: "Drachenseele", category: "Fantasy", rarity: "Legendary", price: 60000, desc: "Drachenflügel, Flammenpartikel und epischer Schwertglow." },
   { id: "shadow_horseman", name: "Schattenhengst", category: "Herde/Lore", rarity: "Legendary", price: 75000, desc: "Dunkler Herden-Lore-Skin mit Pferdegeist-Aura." },
   { id: "cosmic_reaper", name: "Kosmischer Schnitter", category: "Cosmic Horror", rarity: "Legendary", price: 80000, desc: "Galaktischer Todesskin mit Sternennebel-Effekt." },
   { id: "neon_overlord", name: "Neon Overlord", category: "Cyber/Prestige", rarity: "Legendary", price: 85000, desc: "Neon-Herrscher mit massiver Cyber-Aura." },
@@ -93,16 +93,22 @@ async function copyText(text) {
   }
 }
 
-function createStickPreview() {
+function createAvatar(skinId) {
   return `
-    <div class="mini-stick">
-      <span class="mini-head"></span>
-      <span class="mini-body"></span>
-      <span class="mini-arm left"></span>
-      <span class="mini-arm right"></span>
-      <span class="mini-leg left"></span>
-      <span class="mini-leg right"></span>
-      <span class="mini-sword"></span>
+    <div class="avatar skin-${skinId}">
+      <div class="avatar-bg"></div>
+      <div class="avatar-stick">
+        <span class="part head"></span>
+        <span class="part body"></span>
+        <span class="part arm left"></span>
+        <span class="part arm right"></span>
+        <span class="part leg left"></span>
+        <span class="part leg right"></span>
+        <span class="part sword"></span>
+        <span class="extra extra-1"></span>
+        <span class="extra extra-2"></span>
+        <span class="extra extra-3"></span>
+      </div>
     </div>
   `;
 }
@@ -133,12 +139,12 @@ function renderSkins() {
 
   for (const skin of filtered) {
     const card = document.createElement("article");
-    card.className = `skin-card rarity-${skin.rarity}`;
+    card.className = `skin-card rarity-${skin.rarity} skin-${skin.id}`;
     card.innerHTML = `
       <div class="skin-rarity">${skin.rarity}</div>
 
       <div class="skin-figure">
-        ${createStickPreview()}
+        ${createAvatar(skin.id)}
       </div>
 
       <h3 class="skin-name">${skin.name}</h3>

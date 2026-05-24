@@ -1,11 +1,12 @@
-# StickFight Skin-Shop
+# StickFight Skin-Shop v2
 
-Öffentliche Skin-Shop-Seite für den Twitch StickFight Skin-Katalog.
+Überarbeitete Version: Jeder Skin hat jetzt eigene Farben, eigene optische Details und eigene Extras.
+Die Seltenheit steuert nur noch Badge/Rahmen, nicht mehr den Look des Fighters.
 
 ## Dateien
 - `index.html`
 - `style.css`
 - `script.js`
 
-## GitHub Pages
-Repository Settings → Pages → Deploy from branch → main → /root.
+## Update auf GitHub
+Alte `index.html`, `style.css`, `script.js` durch diese Dateien ersetzen.
