@@ -6,3 +6,4 @@ Fix:
 
 ## Update auf GitHub
 Alte `index.html`, `style.css`, `script.js` durch diese Dateien ersetzen.
+Letztes Shop-Update: 06.08.2026
