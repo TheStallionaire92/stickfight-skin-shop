@@ -21,38 +21,38 @@ const skins = [
   { id: "plague_doctor", name: "Pestdoktor", category: "Horror", rarity: "Rare", price: 9000, desc: "Düsterer Pestdoktor-Look mit Schnabelmaske." },
   { id: "arcade_knight", name: "Arcade-Ritter", category: "Retro", rarity: "Rare", price: 9000, desc: "Retro-Pixel-Style mit 8-Bit Treffer-Effekt." },
 
-  { id: "anime_swordsman", name: "Anime-Schwertkämpfer", category: "Anime", rarity: "Epic", price: 12000, desc: "Anime-Kämpfer mit Speed-Linien, Energie-Ring und leuchtender Fokus-Aura." },
-  { id: "demon_student", name: "Dämonenschüler", category: "Anime/Dark", rarity: "Epic", price: 13000, desc: "Dämonische Aura, Hörner, Schattenflammen und violetter Rage-Glow." },
-  { id: "masked_ninja", name: "Maskierter Ninja", category: "Anime", rarity: "Epic", price: 14000, desc: "Maskierter Ninja mit Rauchwolke, Augenband und dunklem Stealth-Glow." },
-  { id: "spirit_samurai", name: "Geister-Samurai", category: "Anime/Fantasy", rarity: "Epic", price: 15000, desc: "Geister-Samurai mit Helm, Runen-Kreis und spiritueller Flammen-Aura." },
-  { id: "thunder_senpai", name: "Donner-Senpai", category: "Anime/Lustig", rarity: "Epic", price: 15000, desc: "Donner-Aura mit Blitzkrone, Schockwelle und grellen Speed-Effekten." },
-  { id: "rose_assassin", name: "Rosen-Assassine", category: "Elegant", rarity: "Epic", price: 16000, desc: "Rosen-Aura, Blütenpartikel und elegante Assassinen-Schatten." },
-  { id: "cyber_ninja", name: "Cyber Ninja", category: "Cyberpunk", rarity: "Epic", price: 18000, desc: "Cyber-Ninja mit Holo-Käfig, Scanlinien, Pixelglitch und Neon-Trail." },
-  { id: "glitch_demon", name: "Glitch Demon", category: "Cyber/Horror", rarity: "Epic", price: 20000, desc: "Dämonischer Glitch-Körper mit roten Fehlerbalken und Cyber-Flimmern." },
-  { id: "mecha_stick", name: "Mecha Stickfighter", category: "Sci-Fi", rarity: "Epic", price: 20000, desc: "Mecha-Rüstung mit Brustpanzer, Gelenken, Servo-Licht und Metallglow." },
-  { id: "holo_blade", name: "Holo Blade", category: "Sci-Fi", rarity: "Epic", price: 22000, desc: "Hologramm-Kapsel, Neonrahmen und transparente Sci-Fi-Lichtklinge." },
-  { id: "void_walker", name: "Void Walker", category: "Dark Fantasy", rarity: "Epic", price: 24000, desc: "Void-Aura mit Portalringen, dunklem Nebel und lila Riss-Effekt." },
-  { id: "bone_knight", name: "Knochenritter", category: "Horror/Fantasy", rarity: "Epic", price: 25000, desc: "Knochenrüstung, Totenschädel-Helm und bleiche Friedhofs-Aura." },
-  { id: "vampire_duelist", name: "Vampir-Duellant", category: "Horror/Edel", rarity: "Epic", price: 26000, desc: "Vampir-Duellant mit Cape, Blutmond-Aura und edlem roten Schwertschein." },
-  { id: "werewolf_rage", name: "Werwolf-Raserei", category: "Horror", rarity: "Epic", price: 28000, desc: "Werwolf-Rage mit Klauen, Ohren, Mondkreis und wilder Kratz-Aura." },
-  { id: "angelic_guardian", name: "Himmlischer Wächter", category: "Fantasy", rarity: "Epic", price: 30000, desc: "Himmlischer Wächter mit Flügeln, Halo und sanfter Lichtbarriere." },
+  { id: "anime_swordsman", name: "Anime-Schwertkämpfer", category: "Anime", rarity: "Epic", price: 12000, desc: "Stachelhaar, langer Mantel, wehender Schal und Katana mit Anime-Speedlines." },
+  { id: "demon_student", name: "Dämonenschüler", category: "Anime/Dark", rarity: "Epic", price: 13000, desc: "Dämon mit Schuluniform, Krawatte, Schultasche, Hörnern und kleinen Flügeln." },
+  { id: "masked_ninja", name: "Maskierter Ninja", category: "Anime", rarity: "Epic", price: 14000, desc: "Vollmaske, Kapuze, Wickelrüstung, Rauchwolken und fliegende Shuriken." },
+  { id: "spirit_samurai", name: "Geister-Samurai", category: "Anime/Fantasy", rarity: "Epic", price: 15000, desc: "Spektrale Samurai-Rüstung mit Kabuto, Runenrad und schwebenden Seelenflammen." },
+  { id: "thunder_senpai", name: "Donner-Senpai", category: "Anime/Lustig", rarity: "Epic", price: 15000, desc: "Schuluniform, wildes Blitzhaar und eine elektrisch geladene Klinge." },
+  { id: "rose_assassin", name: "Rosen-Assassine", category: "Elegant", rarity: "Epic", price: 16000, desc: "Verhüllte Assassinin mit Rose, Dornenranke, Blütenblättern und Rapier." },
+  { id: "cyber_ninja", name: "Cyber Ninja", category: "Cyberpunk", rarity: "Epic", price: 18000, desc: "Tech-Helm, Neonvisier, Schaltkreisrüstung, Drohnen und Energie-Katana." },
+  { id: "glitch_demon", name: "Glitch Demon", category: "Cyber/Horror", rarity: "Epic", price: 20000, desc: "Asymmetrische Hörner, zerrissene Flügel und ein zerhackter Pixelkörper." },
+  { id: "mecha_stick", name: "Mecha Stickfighter", category: "Sci-Fi", rarity: "Epic", price: 20000, desc: "Massive Mecha-Platten, Schulterkanonen, Jetpack und leuchtender Reaktorkern." },
+  { id: "holo_blade", name: "Holo Blade", category: "Sci-Fi", rarity: "Epic", price: 22000, desc: "Transparente Projektionsrüstung mit Drahtgitter, Visier und Holo-Klinge." },
+  { id: "void_walker", name: "Void Walker", category: "Dark Fantasy", rarity: "Epic", price: 24000, desc: "Gesichtslose Kapuze, schwarzes Brustportal, schwebende Felsen und Void-Sense." },
+  { id: "bone_knight", name: "Knochenritter", category: "Horror/Fantasy", rarity: "Epic", price: 25000, desc: "Schädelhelm, Rippenpanzer, gekreuzte Knochen und ein Knochen-Großschwert." },
+  { id: "vampire_duelist", name: "Vampir-Duellant", category: "Horror/Edel", rarity: "Epic", price: 26000, desc: "Blasses Gesicht, rote Augen, Fangzähne, hoher Umhang und elegantes Rapier." },
+  { id: "werewolf_rage", name: "Werwolf-Raserei", category: "Horror", rarity: "Epic", price: 28000, desc: "Wolfskopf, Fellmähne, Fangzähne und drei rasende Krallenangriffe." },
+  { id: "angelic_guardian", name: "Himmlischer Wächter", category: "Fantasy", rarity: "Epic", price: 30000, desc: "Federflügel, Halo, heilige Plattenrüstung, Kreuzschild und Lichtklinge." },
 
-  { id: "fallen_angel", name: "Gefallener Engel", category: "Dark Fantasy", rarity: "Legendary", price: 40000, desc: "Dunkle Flügel-Aura und himmlisch kaputter Style." },
-  { id: "gold_champion", name: "Gold Champion", category: "Prestige", rarity: "Legendary", price: 50000, desc: "Goldener Prestige-Skin mit Siegerkrone." },
-  { id: "blood_emperor", name: "Blutkaiser", category: "Horror/Prestige", rarity: "Legendary", price: 55000, desc: "Kaiserlicher Horror-Look mit blutroter Krone." },
-  { id: "dragon_soul", name: "Drachenseele", category: "Fantasy", rarity: "Legendary", price: 60000, desc: "Drachenflügel, Flammenpartikel und epischer Schwertglow." },
-  { id: "shadow_horseman", name: "Schattenhengst", category: "Herde/Lore", rarity: "Legendary", price: 75000, desc: "Dunkler Herden-Lore-Skin mit Pferdegeist-Aura." },
-  { id: "cosmic_reaper", name: "Kosmischer Schnitter", category: "Cosmic Horror", rarity: "Legendary", price: 80000, desc: "Galaktischer Todesskin mit Sternennebel-Effekt." },
-  { id: "neon_overlord", name: "Neon Overlord", category: "Cyber/Prestige", rarity: "Legendary", price: 85000, desc: "Neon-Herrscher mit massiver Cyber-Aura." },
-  { id: "rainbow_madness", name: "Regenbogen-Wahnsinn", category: "Lustig", rarity: "Legendary", price: 90000, desc: "Komplett übertriebener Regenbogen-Chaos-Look." },
-  { id: "kawaii_destroyer", name: "Kawaii Destroyer", category: "Süß/Chaos", rarity: "Legendary", price: 95000, desc: "Süß, bunt und trotzdem bereit für die Arena." },
-  { id: "herd_guardian", name: "Wächter der Herde", category: "Community", rarity: "Legendary", price: 100000, desc: "Community-Skin mit Herden-Aura und Goldglow." },
+  { id: "fallen_angel", name: "Gefallener Engel", category: "Dark Fantasy", rarity: "Legendary", price: 40000, desc: "Zerrissene schwarze Flügel, gebrochener Halo und fallende dunkle Federn." },
+  { id: "gold_champion", name: "Gold Champion", category: "Prestige", rarity: "Legendary", price: 50000, desc: "Goldene Gladiatorenrüstung, Lorbeerkranz, Champion-Gürtel und Sternschild." },
+  { id: "blood_emperor", name: "Blutkaiser", category: "Horror/Prestige", rarity: "Legendary", price: 55000, desc: "Hohe Kaiserkrone, Blutthron, königlicher Umhang und schwebende Blutkugeln." },
+  { id: "dragon_soul", name: "Drachenseele", category: "Fantasy", rarity: "Legendary", price: 60000, desc: "Drachenkopf, Schuppenpanzer, Flügel, Schweif und lodernde Drachenseele." },
+  { id: "shadow_horseman", name: "Schattenhengst", category: "Herde/Lore", rarity: "Legendary", price: 75000, desc: "Dunkler Reiter auf einem vollständigen Geisterpferd mit Lanze und Sattel." },
+  { id: "cosmic_reaper", name: "Kosmischer Schnitter", category: "Cosmic Horror", rarity: "Legendary", price: 80000, desc: "Schädel unter einer Sternenmantel-Kapuze mit Planeten und kosmischer Sense." },
+  { id: "neon_overlord", name: "Neon Overlord", category: "Cyber/Prestige", rarity: "Legendary", price: 85000, desc: "Gigantische Neonkrone, schwere Tech-Rüstung und zwei schwebende Drohnen." },
+  { id: "rainbow_madness", name: "Regenbogen-Wahnsinn", category: "Lustig", rarity: "Legendary", price: 90000, desc: "Wildes Regenbogenhaar, ungleiche Augen, Farbringe und völliges Neonchaos." },
+  { id: "kawaii_destroyer", name: "Kawaii Destroyer", category: "Süß/Chaos", rarity: "Legendary", price: 95000, desc: "Hasenohren, Riesenschleife, Herzrüstung und ein brutaler Pastell-Hammer." },
+  { id: "herd_guardian", name: "Wächter der Herde", category: "Community", rarity: "Legendary", price: 100000, desc: "Pferdehelm, Herdengeister, Hufeisenschild und goldene Wächterlanze." },
 
-  { id: "red_glitch_king", name: "Roter Glitch-König", category: "Cyber/Horror", rarity: "Mythic", price: 150000, desc: "Roter digitaler König mit aggressivem Glitch-Effekt." },
-  { id: "nightmare_clown", name: "Albtraum-Clown", category: "Horror", rarity: "Mythic", price: 175000, desc: "Der Clown, den niemand nachts im Overlay sehen will." },
-  { id: "celestial_samurai", name: "Celestial Samurai", category: "Anime/Fantasy", rarity: "Mythic", price: 200000, desc: "Kosmischer Samurai mit Sternen-Aura und Premium-Trail." },
-  { id: "golden_mustang", name: "Goldener Mustang", category: "Herde/Prestige", rarity: "Mythic", price: 250000, desc: "Der ultimative Herden-Prestige-Skin in purem Gold." },
-  { id: "the_final_boss", name: "The Final Boss", category: "Ultra Prestige", rarity: "Mythic", price: 500000, desc: "Der teuerste Skin. Für Leute, die als Endgegner erscheinen wollen." }
+  { id: "red_glitch_king", name: "Roter Glitch-König", category: "Cyber/Horror", rarity: "Mythic", price: 150000, desc: "Pixelkrone, Glitch-Thron, königlicher Mantel und zerrissene Datenblöcke." },
+  { id: "nightmare_clown", name: "Albtraum-Clown", category: "Horror", rarity: "Mythic", price: 175000, desc: "Horrorclown mit scharfem Grinsen, Zähnen, Narrenkappe, Ballon und Beil." },
+  { id: "celestial_samurai", name: "Celestial Samurai", category: "Anime/Fantasy", rarity: "Mythic", price: 200000, desc: "Mondsichel-Kabuto, kosmische Rüstung, Sterne, Planeten und Himmels-Katana." },
+  { id: "golden_mustang", name: "Goldener Mustang", category: "Herde/Prestige", rarity: "Mythic", price: 250000, desc: "Goldener Pferdekopf, wehende Mähne und ein galoppierender Mustang-Körper." },
+  { id: "the_final_boss", name: "The Final Boss", category: "Ultra Prestige", rarity: "Mythic", price: 500000, desc: "Dämonenkrone, vier Hörner, Flügel, Bossrüstung, Scherben und Riesenschwert." }
 ];
 
 const grid = document.getElementById("skinGrid");
@@ -75,6 +75,10 @@ function getUseCommand(id) {
   return `!useskin ${id}`;
 }
 
+function isPremiumRarity(rarity) {
+  return rarity === "Epic" || rarity === "Legendary" || rarity === "Mythic";
+}
+
 function showToast(text) {
   toast.textContent = text;
   toast.classList.add("show");
@@ -94,6 +98,20 @@ async function copyText(text) {
 }
 
 function createAvatar(skinId, rarity = "") {
+  if (isPremiumRarity(rarity)) {
+    return `
+      <div class="premium-render-avatar premium-rarity-${rarity}">
+        <canvas
+          class="premium-skin-canvas"
+          data-skin-id="${skinId}"
+          width="400"
+          height="280"
+          aria-label="${skinId} Vorschau"
+        ></canvas>
+      </div>
+    `;
+  }
+
   return `
     <div class="avatar skin-${skinId} avatar-rarity-${rarity}">
       <div class="avatar-bg"></div>
@@ -111,6 +129,68 @@ function createAvatar(skinId, rarity = "") {
       </div>
     </div>
   `;
+}
+
+function createPreviewPlayer(skinId) {
+  const renderer = window.StickFightSkinRenderer;
+  const style = renderer.getSkinStyle(skinId, "#00ff84");
+
+  return {
+    name: "",
+    level: 1,
+    xp: 0,
+    skin: skinId,
+    skinStyle: style,
+    hp: 100,
+    maxHp: 100,
+    x: 200,
+    y: 210,
+    color: style.color,
+    direction: 1,
+    walkFrame: 0,
+    attackAnim: 0,
+    specialAnim: 0,
+    hurtAnim: 0,
+    spawnGlow: 0,
+    spawnProtection: 0,
+    dead: false,
+    hideNameplate: true
+  };
+}
+
+function renderPremiumPreview(targetCanvas) {
+  const renderer = window.StickFightSkinRenderer;
+  const sourceCanvas = document.getElementById("fightCanvas");
+  const skinId = targetCanvas.dataset.skinId;
+
+  if (!renderer || !sourceCanvas || !skinId) {
+    targetCanvas.classList.add("render-failed");
+    return;
+  }
+
+  const sourceContext = sourceCanvas.getContext("2d");
+  const targetContext = targetCanvas.getContext("2d");
+
+  sourceContext.clearRect(0, 0, sourceCanvas.width, sourceCanvas.height);
+  renderer.clearEffects();
+  renderer.drawPlayer(createPreviewPlayer(skinId));
+
+  targetContext.clearRect(0, 0, targetCanvas.width, targetCanvas.height);
+  targetContext.drawImage(
+    sourceCanvas,
+    0,
+    0,
+    sourceCanvas.width,
+    sourceCanvas.height,
+    0,
+    0,
+    targetCanvas.width,
+    targetCanvas.height
+  );
+}
+
+function renderPremiumPreviews(root = document) {
+  root.querySelectorAll(".premium-skin-canvas").forEach(renderPremiumPreview);
 }
 
 function renderSkins() {
@@ -139,7 +219,8 @@ function renderSkins() {
 
   for (const skin of filtered) {
     const card = document.createElement("article");
-    card.className = `skin-card rarity-${skin.rarity} skin-${skin.id}`;
+    const exactRenderClass = isPremiumRarity(skin.rarity) ? " has-exact-render" : "";
+    card.className = `skin-card rarity-${skin.rarity} skin-${skin.id}${exactRenderClass}`;
     card.innerHTML = `
       <div class="skin-rarity">${skin.rarity}</div>
 
@@ -177,6 +258,8 @@ function renderSkins() {
       copyText(button.dataset.copy);
     });
   });
+
+  renderPremiumPreviews(grid);
 }
 
 filterButtons.forEach((button) => {
@@ -195,3 +278,17 @@ copyShopCommand.addEventListener("click", () => {
 });
 
 renderSkins();
+renderPremiumPreviews(document.querySelector(".hero-preview"));
+
+let lastHeroFrame = 0;
+
+function animateHeroPreview(timestamp) {
+  if (timestamp - lastHeroFrame >= 90) {
+    renderPremiumPreviews(document.querySelector(".hero-preview"));
+    lastHeroFrame = timestamp;
+  }
+
+  requestAnimationFrame(animateHeroPreview);
+}
+
+requestAnimationFrame(animateHeroPreview);

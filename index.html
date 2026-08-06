@@ -8,6 +8,24 @@
 </head>
 
 <body>
+  <!-- Unsichtbare Zeichenfläche des echten StickFight-Renderers. -->
+  <div class="skin-renderer-runtime" aria-hidden="true">
+    <div id="stickfight-wrapper"></div>
+    <div id="skyline"></div>
+    <div id="event-banner">
+      <span class="banner-kicker"></span>
+      <span class="banner-title"></span>
+      <span class="banner-subtitle"></span>
+    </div>
+    <div id="winner-banner"></div>
+    <div id="winner-name"></div>
+    <div id="join-timer"></div>
+    <div id="fight-callout"></div>
+    <div id="city-layer"></div>
+    <div id="arena-status"></div>
+    <canvas id="fightCanvas" width="400" height="280"></canvas>
+  </div>
+
   <div class="page-bg">
     <div class="grid-glow"></div>
     <div class="red-orb orb-one"></div>
@@ -50,20 +68,14 @@
         <div class="arena-topline">Live Preview</div>
         <div class="fighter-preview">
           <div class="fighter-aura"></div>
-          <div class="avatar skin-celestial_samurai avatar-rarity-Mythic hero-avatar">
-            <div class="avatar-bg"></div>
-            <div class="avatar-stick">
-              <span class="part head"></span>
-              <span class="part body"></span>
-              <span class="part arm left"></span>
-              <span class="part arm right"></span>
-              <span class="part leg left"></span>
-              <span class="part leg right"></span>
-              <span class="part sword"></span>
-              <span class="extra extra-1"></span>
-              <span class="extra extra-2"></span>
-              <span class="extra extra-3"></span>
-            </div>
+          <div class="premium-render-avatar hero-avatar">
+            <canvas
+              class="premium-skin-canvas hero-skin-canvas"
+              data-skin-id="celestial_samurai"
+              width="400"
+              height="280"
+              aria-label="Celestial Samurai Vorschau"
+            ></canvas>
           </div>
           <div class="preview-name">CELESTIAL SAMURAI</div>
           <div class="preview-sub">Mythic Skin · 200.000 Hufeisen</div>
@@ -127,6 +139,11 @@
     </p>
   </footer>
 
+  <script>
+    // Shop-Modus: Skin-Zeichnung laden, aber Kampf und WebSocket nicht starten.
+    window.STICKFIGHT_RENDERER_ONLY = true;
+  </script>
+  <script src="skin-renderer.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
