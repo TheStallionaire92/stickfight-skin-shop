@@ -1999,3 +1999,26 @@ footer {
     height: 217px;
   }
 }
+
+
+/* StickFight 2.0: finale SVG-Vorschauen der sechs neuen Shop-Skins */
+.new-2-skin-avatar {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:visible;
+}
+.new-2-skin-svg {
+  width:100%;
+  height:100%;
+  max-width:360px;
+  max-height:250px;
+  object-fit:contain;
+  filter: drop-shadow(0 0 16px rgba(255,255,255,.15));
+}
+.skin-card.skin-storm_monk .new-2-skin-svg { filter: drop-shadow(0 0 18px rgba(44,244,255,.55)); }
+.skin-card.skin-phantom_jester .new-2-skin-svg { filter: drop-shadow(0 0 18px rgba(232,60,255,.55)); }
+.skin-card.skin-void_ronin .new-2-skin-svg { filter: drop-shadow(0 0 20px rgba(157,77,255,.6)); }
+.skin-card.skin-inferno_warden .new-2-skin-svg { filter: drop-shadow(0 0 20px rgba(255,59,32,.6)); }
+.skin-card.skin-iron_colossus .new-2-skin-svg { filter: drop-shadow(0 0 20px rgba(255,91,53,.5)); }
+.skin-card.skin-astral_stallion .new-2-skin-svg { filter: drop-shadow(0 0 22px rgba(255,211,74,.65)); }

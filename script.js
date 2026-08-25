@@ -52,7 +52,14 @@ const skins = [
   { id: "nightmare_clown", name: "Albtraum-Clown", category: "Horror", rarity: "Mythic", price: 175000, desc: "Horrorclown mit scharfem Grinsen, Zähnen, Narrenkappe, Ballon und Beil." },
   { id: "celestial_samurai", name: "Celestial Samurai", category: "Anime/Fantasy", rarity: "Mythic", price: 200000, desc: "Mondsichel-Kabuto, kosmische Rüstung, Sterne, Planeten und Himmels-Katana." },
   { id: "golden_mustang", name: "Goldener Mustang", category: "Herde/Prestige", rarity: "Mythic", price: 250000, desc: "Goldener Pferdekopf, wehende Mähne und ein galoppierender Mustang-Körper." },
-  { id: "the_final_boss", name: "The Final Boss", category: "Ultra Prestige", rarity: "Mythic", price: 500000, desc: "Dämonenkrone, vier Hörner, Flügel, Bossrüstung, Scherben und Riesenschwert." }
+  { id: "the_final_boss", name: "The Final Boss", category: "Ultra Prestige", rarity: "Mythic", price: 500000, desc: "Dämonenkrone, vier Hörner, Flügel, Bossrüstung, Scherben und Riesenschwert." },
+
+  { id: "storm_monk", name: "Storm Monk", category: "Elementar/Prestige", rarity: "Legendary", price: 110000, desc: "Gewitter-Mönch mit Blitzpanzer, Klauen und der Signature-Attacke Thunder Palm." },
+  { id: "phantom_jester", name: "Phantom Jester", category: "Horror/Chaos", rarity: "Legendary", price: 125000, desc: "Geisterhafter Narr mit Rapier, Albtraumrüstung und der Signature-Attacke Final Laugh." },
+  { id: "void_ronin", name: "Void Ronin", category: "Dark Fantasy", rarity: "Mythic", price: 225000, desc: "Leeren-Samurai mit Celestial Katana, Void-Rüstung und der Signature-Attacke Void Iai." },
+  { id: "inferno_warden", name: "Inferno Warden", category: "Horror/Elementar", rarity: "Mythic", price: 300000, desc: "Glühender Feuerwächter mit Dämonenklinge und der Signature-Attacke Hellgate Breaker." },
+  { id: "iron_colossus", name: "Iron Colossus", category: "Mecha/Prestige", rarity: "Mythic", price: 350000, desc: "Massiver Stahlkoloss mit Kernpanzer, Kriegshammer und der Signature-Attacke World Anvil." },
+  { id: "astral_stallion", name: "Astral Stallion", category: "Herde/Ultra Prestige", rarity: "Mythic", price: 425000, desc: "Kosmischer Herden-Champion mit Mustang-Rüstung, goldener Lanze und Astral Stampede." }
 ];
 
 const grid = document.getElementById("skinGrid");
@@ -97,7 +104,20 @@ async function copyText(text) {
   }
 }
 
+const NEW_2_0_SKINS = new Set([
+  "storm_monk", "phantom_jester", "void_ronin",
+  "inferno_warden", "iron_colossus", "astral_stallion"
+]);
+
 function createAvatar(skinId, rarity = "") {
+  if (NEW_2_0_SKINS.has(skinId)) {
+    return `
+      <div class="premium-render-avatar premium-rarity-${rarity} new-2-skin-avatar">
+        <img class="new-2-skin-svg" src="fighter-assets/${skinId}.svg" alt="${skinId} Vorschau" />
+      </div>
+    `;
+  }
+
   if (isPremiumRarity(rarity)) {
     return `
       <div class="premium-render-avatar premium-rarity-${rarity}">
