@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-label="Kürbis-Schnitter">
+  <defs>
+    <linearGradient id="pumpkin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff9b24"/>
+      <stop offset="0.55" stop-color="#e05c0d"/>
+      <stop offset="1" stop-color="#8f2500"/>
+    </linearGradient>
+    <linearGradient id="coat" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#27232b"/>
+      <stop offset="0.5" stop-color="#111219"/>
+      <stop offset="1" stop-color="#05060a"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f1f3f6"/>
+      <stop offset="0.28" stop-color="#8b929d"/>
+      <stop offset="0.62" stop-color="#313640"/>
+      <stop offset="1" stop-color="#111319"/>
+    </linearGradient>
+    <radialGradient id="fireGlow">
+      <stop offset="0" stop-color="#ffd46a" stop-opacity=".95"/>
+      <stop offset=".45" stop-color="#ff7a00" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#ff7a00" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <ellipse cx="210" cy="492" rx="112" ry="14" fill="#000" opacity=".36"/>
+  <circle cx="210" cy="137" r="92" fill="url(#fireGlow)" opacity=".52"/>
+
+  <!-- Scythe behind the body -->
+  <g transform="rotate(-7 92 283)">
+    <path d="M83 158 L103 468" fill="none" stroke="#5a3521" stroke-width="15" stroke-linecap="round"/>
+    <path d="M87 159 C120 104 205 77 282 107 C223 107 165 130 124 172 C109 187 98 194 87 195 Z"
+          fill="url(#metal)" stroke="#07080b" stroke-width="7"/>
+    <path d="M107 137 C151 108 202 95 251 101" fill="none" stroke="#ff8a1b" stroke-width="3" opacity=".75"/>
+  </g>
+
+  <!-- Torn cape behind shoulders only, never enclosing the full body -->
+  <path d="M142 220 Q163 194 185 190 L166 341 L126 398 L139 317 L105 350 L126 247 Z"
+        fill="#090a0f" stroke="#030408" stroke-width="7"/>
+  <path d="M278 220 Q257 194 235 190 L254 341 L294 398 L281 317 L315 350 L294 247 Z"
+        fill="#090a0f" stroke="#030408" stroke-width="7"/>
+
+  <!-- Neck -->
+  <path d="M190 184 L230 184 L235 218 L185 218 Z" fill="#191a20" stroke="#050609" stroke-width="6"/>
+
+  <!-- Fitted armored torso, clearly human anatomy -->
+  <path d="M169 211 Q210 194 251 211 L267 316 Q242 343 210 345 Q178 343 153 316 Z"
+        fill="url(#coat)" stroke="#050609" stroke-width="8"/>
+  <path d="M183 224 L237 224 L244 289 Q228 305 210 307 Q192 305 176 289 Z"
+        fill="#171820" stroke="#5e2a0a" stroke-width="4"/>
+  <path d="M189 244 L231 244 M185 264 L235 264 M182 284 L238 284"
+        stroke="#6b4b32" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+  <circle cx="210" cy="232" r="9" fill="#ff8b13" filter="url(#glow)"/>
+
+  <!-- Belt -->
+  <path d="M158 313 Q210 328 262 313 L263 335 Q210 349 157 335 Z" fill="#37261e" stroke="#07080b" stroke-width="6"/>
+  <rect x="198" y="316" width="24" height="24" rx="4" fill="#c9791d" stroke="#18140f" stroke-width="4"/>
+
+  <!-- Separate coat tails -->
+  <path d="M160 334 L202 344 L192 453 L139 470 L151 396 L130 432 L142 351 Z"
+        fill="#0c0d12" stroke="#050609" stroke-width="7"/>
+  <path d="M260 334 L218 344 L228 453 L281 470 L269 396 L290 432 L278 351 Z"
+        fill="#0c0d12" stroke="#050609" stroke-width="7"/>
+
+  <!-- Legs clearly visible -->
+  <path d="M185 343 L208 345 L204 444 L181 478 L162 471 L176 429 Z" fill="#24252c" stroke="#050609" stroke-width="7"/>
+  <path d="M235 343 L212 345 L216 444 L239 478 L258 471 L244 429 Z" fill="#24252c" stroke="#050609" stroke-width="7"/>
+  <path d="M157 469 Q178 459 197 475 L194 489 L150 489 Z" fill="#0b0c11" stroke="#050609" stroke-width="6"/>
+  <path d="M263 469 Q242 459 223 475 L226 489 L270 489 Z" fill="#0b0c11" stroke="#050609" stroke-width="6"/>
+
+  <!-- Skeletal arms and gloves -->
+  <path d="M160 231 Q133 248 124 285 L111 347" fill="none" stroke="#25262d" stroke-width="24" stroke-linecap="round"/>
+  <path d="M260 231 Q287 248 296 285 L309 347" fill="none" stroke="#25262d" stroke-width="24" stroke-linecap="round"/>
+  <path d="M160 231 Q133 248 124 285 L111 347" fill="none" stroke="#5c626b" stroke-width="4" stroke-linecap="round" opacity=".65"/>
+  <path d="M260 231 Q287 248 296 285 L309 347" fill="none" stroke="#5c626b" stroke-width="4" stroke-linecap="round" opacity=".65"/>
+  <path d="M98 342 Q111 331 124 343 L125 365 Q111 375 98 363 Z" fill="#d7c8a4" stroke="#050609" stroke-width="5"/>
+  <path d="M322 342 Q309 331 296 343 L295 365 Q309 375 322 363 Z" fill="#d7c8a4" stroke="#050609" stroke-width="5"/>
+  <path d="M101 353 l-15 10 M106 358 l-11 15 M319 353 l15 10 M314 358 l11 15" stroke="#d7c8a4" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Open hood behind pumpkin, face/head fully visible -->
+  <path d="M158 125 Q164 73 210 61 Q256 73 262 125 L246 113 Q237 88 210 84 Q183 88 174 113 Z"
+        fill="#0a0b10" stroke="#050609" stroke-width="7"/>
+
+  <!-- Actual pumpkin head -->
+  <path d="M168 116 Q172 82 196 78 Q210 66 224 78 Q248 82 252 116 Q258 153 236 179 Q210 194 184 179 Q162 153 168 116 Z"
+        fill="url(#pumpkin)" stroke="#080604" stroke-width="8"/>
+  <path d="M184 91 Q173 128 185 171 M205 78 Q196 127 204 185 M226 80 Q238 127 232 172"
+        fill="none" stroke="#9b3308" stroke-width="5" opacity=".8"/>
+  <path d="M203 74 L206 52 L225 48 L221 72 Z" fill="#4b5a21" stroke="#171b0d" stroke-width="5"/>
+
+  <!-- Jack-o-lantern face -->
+  <path d="M181 121 L201 113 L194 135 Z" fill="#160b02" stroke="#ffd25b" stroke-width="3" filter="url(#glow)"/>
+  <path d="M239 121 L219 113 L226 135 Z" fill="#160b02" stroke="#ffd25b" stroke-width="3" filter="url(#glow)"/>
+  <path d="M183 149 L195 142 L205 151 L216 141 L227 150 L239 144 L233 165 L218 171 L204 165 L191 171 Z"
+        fill="#160b02" stroke="#ffb12b" stroke-width="3" filter="url(#glow)"/>
+
+  <!-- Shoulder pumpkin-leaf armor accents -->
+  <path d="M151 211 L124 197 L143 236 L171 230 Z" fill="#8e3a0c" stroke="#050609" stroke-width="5"/>
+  <path d="M269 211 L296 197 L277 236 L249 230 Z" fill="#8e3a0c" stroke="#050609" stroke-width="5"/>
+</svg>
