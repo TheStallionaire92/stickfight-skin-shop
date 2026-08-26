@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 520" role="img" aria-label="Albtraum-Clown">
+<defs>
+    <linearGradient id="armor" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3eee7"/><stop offset=".2" stop-color="#9b0f2f"/>
+      <stop offset=".54" stop-color="#252a33"/><stop offset="1" stop-color="#05070b"/>
+    </linearGradient>
+    <linearGradient id="armor2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef1f5"/><stop offset=".18" stop-color="#f3eee7"/>
+      <stop offset=".58" stop-color="#5a616d"/><stop offset="1" stop-color="#101319"/>
+    </linearGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2=".9" y2="1">
+      <stop offset="0" stop-color="#9b0f2f"/><stop offset=".3" stop-color="#25151e"/>
+      <stop offset=".68" stop-color="#0c0d12"/><stop offset="1" stop-color="#020306"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e4ded5"/><stop offset="1" stop-color="#3a2424"/>
+    </linearGradient>
+    <linearGradient id="horse" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3eee7"/><stop offset=".18" stop-color="#9b0f2f"/>
+      <stop offset=".52" stop-color="#1a1c23"/><stop offset="1" stop-color="#020306"/>
+    </linearGradient>
+    <radialGradient id="core"><stop offset="0" stop-color="#fff"/><stop offset=".18" stop-color="#f3eee7"/><stop offset=".48" stop-color="#9b0f2f"/><stop offset="1" stop-color="#8d1029" stop-opacity="0"/></radialGradient>
+    <filter id="shadow" x="-70%" y="-70%" width="240%" height="240%"><feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity=".8"/></filter>
+    <filter id="glow" x="-120%" y="-120%" width="340%" height="340%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+
+    <ellipse cx="235" cy="498" rx="105" ry="15" fill="#000" opacity=".45"/>
+    <g filter="url(#shadow)">
+      <!-- torn circus coat tails -->
+      <path d="M171 226 Q235 186 299 226 L303 337 L286 432 L258 401 L235 462 L212 401 L184 432 L167 337Z" fill="url(#cloth)" stroke="#020307" stroke-width="10"/>
+      <path d="M184 304 L153 431 L205 390 M286 304 L317 431 L265 390" fill="#15070d" stroke="#020307" stroke-width="7"/>
+      <!-- striped trousers -->
+      <path d="M206 340 L194 478" stroke="#ede8e0" stroke-width="28" stroke-linecap="round"/><path d="M264 340 L276 478" stroke="#4a0b1b" stroke-width="28" stroke-linecap="round"/>
+      <path d="M171 476 H216 L211 503 H159Z M254 476 H299 L312 503 H260Z" fill="#0a0a0c" stroke="#a61534" stroke-width="6"/>
+      <!-- torso vest and ruffles -->
+      <path d="M185 208 Q235 184 285 208 L276 331 Q235 352 194 331Z" fill="#240911" stroke="#020307" stroke-width="9"/>
+      <path d="M207 224 L235 208 L263 224 L258 309 L235 325 L212 309Z" fill="#10090e" stroke="#c81d3e" stroke-width="5"/>
+      <path d="M177 212 Q235 178 293 212 L281 235 Q235 218 189 235Z" fill="#e6e0d8" stroke="#020307" stroke-width="6"/>
+      <circle cx="194" cy="225" r="10" fill="#e6e0d8"/><circle cx="217" cy="216" r="10" fill="#e6e0d8"/><circle cx="240" cy="214" r="10" fill="#e6e0d8"/><circle cx="263" cy="217" r="10" fill="#e6e0d8"/><circle cx="286" cy="226" r="10" fill="#e6e0d8"/>
+      <!-- long arms -->
+      <path d="M184 244 C148 271 143 320 156 366" stroke="#dfd9d2" stroke-width="20" stroke-linecap="round"/><path d="M286 244 C321 271 327 311 317 356" stroke="#dfd9d2" stroke-width="20" stroke-linecap="round"/>
+      <circle cx="156" cy="367" r="12" fill="#e2ddd6" stroke="#020307" stroke-width="5"/><circle cx="317" cy="357" r="12" fill="#e2ddd6" stroke="#020307" stroke-width="5"/>
+      <!-- horror clown head, no horns -->
+      <ellipse cx="235" cy="138" rx="48" ry="53" fill="#e6e0d9" stroke="#020307" stroke-width="9"/>
+      <path d="M190 128 Q235 92 280 128 L273 154 Q235 170 197 154Z" fill="#f0ebe4"/>
+      <ellipse cx="213" cy="134" rx="9" ry="13" fill="#090307"/><ellipse cx="257" cy="134" rx="9" ry="13" fill="#090307"/>
+      <circle cx="213" cy="134" r="4" fill="#ff173d" filter="url(#glow)"/><circle cx="257" cy="134" r="4" fill="#ff173d" filter="url(#glow)"/>
+      <circle cx="235" cy="151" r="9" fill="#c51735" stroke="#6a081a" stroke-width="3"/>
+      <path d="M199 169 Q235 205 271 169 Q258 214 235 217 Q212 214 199 169Z" fill="#070307" stroke="#5d0a1c" stroke-width="5"/>
+      <g fill="#f7f3ec"><path d="M207 176 L216 194 L224 178Z"/><path d="M224 179 L233 198 L241 179Z"/><path d="M242 179 L251 194 L260 176Z"/></g>
+      <!-- messy clown hair and crooked top hat -->
+      <path d="M196 114 C176 96 173 72 189 55 C193 78 207 87 220 91 M274 114 C294 96 297 72 281 55 C277 78 263 87 250 91" fill="#8f1029" stroke="#020307" stroke-width="6"/>
+      <path d="M205 98 L216 42 L271 48 L266 103Z" fill="#0a0a0d" stroke="#020307" stroke-width="8"/><path d="M202 95 H275" stroke="#a91435" stroke-width="6"/>
+      <!-- giant nightmare cleaver -->
+      <path d="M317 356 L390 171" stroke="#020307" stroke-width="24"/><path d="M317 356 L390 171" stroke="#5f5958" stroke-width="10"/>
+      <path d="M373 188 L433 118 L459 140 L422 220 L392 230Z" fill="url(#armor2)" stroke="#020307" stroke-width="8"/>
+      <path d="M389 182 L433 142" stroke="#c81d3e" stroke-width="5"/>
+      <!-- small carnival bell chain, integrated detail -->
+      <path d="M178 257 C162 269 157 284 159 302" fill="none" stroke="#d8c48c" stroke-width="3"/><circle cx="159" cy="307" r="6" fill="#d1ad4e"/>
+    </g>
+</svg>

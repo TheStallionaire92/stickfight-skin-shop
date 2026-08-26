@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 520" role="img" aria-label="Schattenhengst">
+<defs>
+    <linearGradient id="armor" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ae77ff"/><stop offset=".2" stop-color="#3d185d"/>
+      <stop offset=".54" stop-color="#252a33"/><stop offset="1" stop-color="#05070b"/>
+    </linearGradient>
+    <linearGradient id="armor2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef1f5"/><stop offset=".18" stop-color="#ae77ff"/>
+      <stop offset=".58" stop-color="#5a616d"/><stop offset="1" stop-color="#101319"/>
+    </linearGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2=".9" y2="1">
+      <stop offset="0" stop-color="#3d185d"/><stop offset=".3" stop-color="#25151e"/>
+      <stop offset=".68" stop-color="#0c0d12"/><stop offset="1" stop-color="#020306"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#71504a"/><stop offset="1" stop-color="#3a2424"/>
+    </linearGradient>
+    <linearGradient id="horse" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ae77ff"/><stop offset=".18" stop-color="#3d185d"/>
+      <stop offset=".52" stop-color="#1a1c23"/><stop offset="1" stop-color="#020306"/>
+    </linearGradient>
+    <radialGradient id="core"><stop offset="0" stop-color="#fff"/><stop offset=".18" stop-color="#ae77ff"/><stop offset=".48" stop-color="#3d185d"/><stop offset="1" stop-color="#6f2aa2" stop-opacity="0"/></radialGradient>
+    <filter id="shadow" x="-70%" y="-70%" width="240%" height="240%"><feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity=".8"/></filter>
+    <filter id="glow" x="-120%" y="-120%" width="340%" height="340%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+
+    <ellipse cx="315" cy="494" rx="218" ry="17" fill="#000" opacity=".42"/>
+    <path d="M77 300 C101 261 161 244 236 249 C295 252 337 266 364 294 C382 313 388 343 375 365 C346 397 278 408 195 401 C131 396 88 375 71 342 C64 328 66 315 77 300Z" fill="url(#horse)" stroke="#020307" stroke-width="13"/>
+    <path d="M319 292 C332 250 339 206 355 171 C371 136 393 111 425 103 C453 97 480 108 491 129 C502 151 489 174 466 184 C448 192 428 190 415 203 C401 218 404 249 398 280 C392 315 379 338 355 351Z" fill="url(#horse)" stroke="#020307" stroke-width="13"/>
+    <path d="M419 103 L407 69 L436 94 M452 105 L469 73 L475 112" fill="url(#horse)" stroke="#020307" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M441 128 C459 126 473 135 476 148 C466 161 445 166 425 160 C414 153 416 138 423 132Z" fill="#0a0b10" stroke="#020307" stroke-width="5"/>
+    <circle cx="457" cy="139" r="5" fill="#b88cff" filter="url(#glow)"/>
+    <path d="M348 176 C367 151 388 137 410 129" fill="none" stroke="#b88cff" stroke-opacity=".28" stroke-width="5"/>
+    <!-- tail -->
+    <path d="M83 319 C35 307 31 274 51 250 C58 282 78 282 100 291 C86 313 65 336 43 344 C54 327 68 318 83 319Z" fill="url(#horse)" stroke="#020307" stroke-width="9"/>
+    <!-- articulated legs -->
+    <g fill="none" stroke="url(#horse)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M135 372 C129 410 118 437 124 468 L112 490"/>
+      <path d="M188 382 C183 419 176 446 184 474 L180 493"/>
+      <path d="M298 383 C311 418 323 443 316 470 L327 491"/>
+      <path d="M348 366 C362 402 374 430 366 462 L375 487"/>
+    </g>
+    <g fill="#07080c" stroke="#4b1f6f" stroke-width="4">
+      <path d="M98 486 H129 L126 503 H94Z"/><path d="M167 489 H196 L194 505 H164Z"/>
+      <path d="M314 487 H344 L347 503 H317Z"/><path d="M362 483 H392 L396 499 H366Z"/>
+    </g>
+    <!-- saddle and barding -->
+    <path d="M161 263 C205 245 270 247 318 266 L304 319 C257 305 205 304 158 320Z" fill="#0b0c10" stroke="#4b1f6f" stroke-width="7"/>
+    <path d="M102 286 C153 266 205 264 254 274 L242 349 C190 342 139 343 93 357Z" fill="url(#armor)" stroke="#020307" stroke-width="8"/>
+    <path d="M102 292 C145 278 188 276 229 281" fill="none" stroke="#b88cff" stroke-opacity=".55" stroke-width="4"/>
+    <path d="M259 274 C302 278 334 290 362 310 L352 360 C321 346 289 338 251 337Z" fill="url(#armor)" stroke="#020307" stroke-width="8"/>
+    
+    <!-- rider legs and boots around saddle -->
+    <g filter="url(#shadow)">
+      <path d="M227 224 C222 267 218 299 210 337" stroke="#12131a" stroke-width="22" stroke-linecap="round"/>
+      <path d="M267 224 C270 267 276 299 286 336" stroke="#12131a" stroke-width="22" stroke-linecap="round"/>
+      <path d="M201 331 L221 336 L214 356 L191 349Z M279 332 L300 327 L307 346 L286 356Z" fill="url(#armor)" stroke="#020307" stroke-width="5"/>
+      <!-- tattered cape integrated with rider -->
+      <path d="M214 142 C184 165 175 209 184 253 L154 289 L190 279 L175 317 L214 284 L235 247Z" fill="url(#cloth)" stroke="#020307" stroke-width="8"/>
+      <!-- armored torso -->
+      <path d="M207 133 Q247 111 286 134 L293 217 Q250 244 205 217Z" fill="url(#armor)" stroke="#020307" stroke-width="10"/>
+      <path d="M221 146 L250 133 L279 148 L274 205 L250 219 L226 204Z" fill="#090a10" stroke="#7e4cb0" stroke-width="5"/>
+      <!-- shoulders -->
+      <path d="M210 147 L171 163 L180 196 L218 184Z M286 147 L325 163 L316 196 L278 184Z" fill="url(#armor)" stroke="#020307" stroke-width="8"/>
+      <!-- helm and hood -->
+      <path d="M210 132 Q211 75 250 60 Q289 75 290 132 L274 153 H226Z" fill="#07080d" stroke="#020307" stroke-width="10"/>
+      <path d="M220 121 Q224 87 250 82 Q276 87 280 121 L270 142 H230Z" fill="#0e1017" stroke="#60328c" stroke-width="5"/>
+      <path d="M228 118 L245 114 M255 114 L272 118" stroke="#c49cff" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+      <path d="M216 88 L198 56 L229 75 M284 87 L303 55 L271 74" fill="url(#armor)" stroke="#020307" stroke-width="7"/>
+      <!-- lance gripped by rider -->
+      <path d="M294 210 L497 28" stroke="#020307" stroke-width="25" stroke-linecap="round"/>
+      <path d="M294 210 L497 28" stroke="url(#armor2)" stroke-width="12" stroke-linecap="round"/>
+      <path d="M477 48 L521 2 L538 22 L510 64Z" fill="url(#armor2)" stroke="#020307" stroke-width="7"/>
+      <circle cx="294" cy="210" r="12" fill="url(#armor2)" stroke="#020307" stroke-width="5"/>
+      <!-- subtle purple smoke at hooves -->
+      <path d="M92 477 C61 461 48 447 58 430 C73 447 86 446 105 454 C117 463 112 477 92 477Z M364 474 C391 458 405 447 397 430 C384 446 371 448 353 456 C343 465 347 477 364 474Z" fill="#6a2b93" opacity=".28" filter="url(#glow)"/>
+    </g>
+</svg>

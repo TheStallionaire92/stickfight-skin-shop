@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 520" role="img" aria-label="Neon Overlord">
+<defs>
+    <linearGradient id="armor" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff3eea"/><stop offset=".2" stop-color="#00d9d2"/>
+      <stop offset=".54" stop-color="#252a33"/><stop offset="1" stop-color="#05070b"/>
+    </linearGradient>
+    <linearGradient id="armor2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef1f5"/><stop offset=".18" stop-color="#ff3eea"/>
+      <stop offset=".58" stop-color="#5a616d"/><stop offset="1" stop-color="#101319"/>
+    </linearGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2=".9" y2="1">
+      <stop offset="0" stop-color="#00d9d2"/><stop offset=".3" stop-color="#25151e"/>
+      <stop offset=".68" stop-color="#0c0d12"/><stop offset="1" stop-color="#020306"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9c6a53"/><stop offset="1" stop-color="#3a2424"/>
+    </linearGradient>
+    <linearGradient id="horse" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff3eea"/><stop offset=".18" stop-color="#00d9d2"/>
+      <stop offset=".52" stop-color="#1a1c23"/><stop offset="1" stop-color="#020306"/>
+    </linearGradient>
+    <radialGradient id="core"><stop offset="0" stop-color="#fff"/><stop offset=".18" stop-color="#ff3eea"/><stop offset=".48" stop-color="#00d9d2"/><stop offset="1" stop-color="#00e7e0" stop-opacity="0"/></radialGradient>
+    <filter id="shadow" x="-70%" y="-70%" width="240%" height="240%"><feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity=".8"/></filter>
+    <filter id="glow" x="-120%" y="-120%" width="340%" height="340%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+
+    <ellipse cx="240" cy="498" rx="105" ry="15" fill="#000" opacity=".44"/>
+    <g filter="url(#shadow)">
+      <!-- long imperial coat -->
+      <path d="M177 216 Q240 178 303 216 L315 352 L290 459 L258 425 L240 472 L222 425 L190 459 L165 352Z" fill="url(#cloth)" stroke="#020307" stroke-width="10"/>
+      <!-- legs -->
+      <path d="M210 347 L198 477" stroke="#10151b" stroke-width="28" stroke-linecap="round"/><path d="M270 347 L282 477" stroke="#10151b" stroke-width="28" stroke-linecap="round"/>
+      <path d="M184 478 H217 L214 502 H174Z M263 478 H296 L306 502 H266Z" fill="#070a0e" stroke="#00eee4" stroke-width="5"/>
+      <!-- torso armor -->
+      <path d="M180 188 Q240 151 300 188 L289 335 Q240 366 191 335Z" fill="url(#armor)" stroke="#020307" stroke-width="11"/>
+      <path d="M205 203 L240 184 L275 203 L269 303 L240 329 L211 303Z" fill="#061116" stroke="#00eee4" stroke-width="6"/>
+      <path d="M220 222 L240 207 L260 222 L257 280 L240 294 L223 280Z" fill="#0c1017" stroke="#ff45eb" stroke-width="5"/>
+      <!-- symmetrical pauldrons -->
+      <path d="M182 207 L117 190 L101 236 L181 251Z M298 207 L363 190 L379 236 L299 251Z" fill="url(#armor)" stroke="#020307" stroke-width="9"/>
+      <path d="M133 205 L164 211 M347 205 L316 211" stroke="#00fff0" stroke-width="5"/>
+      <!-- arms -->
+      <path d="M173 234 C147 259 141 301 151 334" stroke="#8d614f" stroke-width="24" stroke-linecap="round"/><path d="M307 234 C329 258 337 291 329 325" stroke="#8d614f" stroke-width="24" stroke-linecap="round"/>
+      <path d="M136 322 L161 315 L167 349 L140 358Z M316 317 L343 324 L338 357 L310 349Z" fill="url(#armor)" stroke="#020307" stroke-width="7"/>
+      <!-- human head + overlord crown/visor -->
+      <ellipse cx="240" cy="132" rx="37" ry="44" fill="url(#skin)" stroke="#020307" stroke-width="8"/>
+      <path d="M201 124 Q240 91 279 124 L274 153 H206Z" fill="#05070c" stroke="#020307" stroke-width="7"/>
+      <path d="M211 127 H269" stroke="#00fff0" stroke-width="8" filter="url(#glow)"/>
+      <path d="M208 101 L190 58 L222 83 L240 42 L258 83 L290 58 L272 101" fill="none" stroke="url(#armor2)" stroke-width="9" stroke-linejoin="round"/>
+      <path d="M219 154 Q240 168 261 154" fill="none" stroke="#2b1714" stroke-width="4"/>
+      <!-- massive energy halberd -->
+      <path d="M329 333 L401 79" stroke="#020307" stroke-width="26" stroke-linecap="round"/><path d="M329 333 L401 79" stroke="#b8c2cc" stroke-width="11" stroke-linecap="round"/>
+      <path d="M390 100 L432 49 L464 76 L422 117Z" fill="#07262a" stroke="#00fff0" stroke-width="7"/>
+      <path d="M401 88 L445 129 L470 95 L429 62Z" fill="#241126" stroke="#ff45eb" stroke-width="6"/>
+      <circle cx="420" cy="90" r="13" fill="url(#core)" filter="url(#glow)"/>
+      <!-- restrained integrated neon piping -->
+      <path d="M192 321 Q240 345 288 321" fill="none" stroke="#00fff0" stroke-width="4" opacity=".65"/>
+      <path d="M204 356 L194 407 M276 356 L286 407" stroke="#ff45eb" stroke-width="3" opacity=".55"/>
+    </g>
+</svg>

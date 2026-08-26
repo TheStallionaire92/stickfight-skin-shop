@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 520" role="img" aria-label="Goldener Mustang">
+<defs>
+    <linearGradient id="armor" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0a4"/><stop offset=".2" stop-color="#b47a11"/>
+      <stop offset=".54" stop-color="#252a33"/><stop offset="1" stop-color="#05070b"/>
+    </linearGradient>
+    <linearGradient id="armor2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef1f5"/><stop offset=".18" stop-color="#fff0a4"/>
+      <stop offset=".58" stop-color="#5a616d"/><stop offset="1" stop-color="#101319"/>
+    </linearGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2=".9" y2="1">
+      <stop offset="0" stop-color="#b47a11"/><stop offset=".3" stop-color="#25151e"/>
+      <stop offset=".68" stop-color="#0c0d12"/><stop offset="1" stop-color="#020306"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#98634b"/><stop offset="1" stop-color="#3a2424"/>
+    </linearGradient>
+    <linearGradient id="horse" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0a4"/><stop offset=".18" stop-color="#b47a11"/>
+      <stop offset=".52" stop-color="#1a1c23"/><stop offset="1" stop-color="#020306"/>
+    </linearGradient>
+    <radialGradient id="core"><stop offset="0" stop-color="#fff"/><stop offset=".18" stop-color="#fff0a4"/><stop offset=".48" stop-color="#b47a11"/><stop offset="1" stop-color="#e8ba3a" stop-opacity="0"/></radialGradient>
+    <filter id="shadow" x="-70%" y="-70%" width="240%" height="240%"><feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity=".8"/></filter>
+    <filter id="glow" x="-120%" y="-120%" width="340%" height="340%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+
+    <ellipse cx="315" cy="494" rx="218" ry="17" fill="#000" opacity=".42"/>
+    <path d="M77 300 C101 261 161 244 236 249 C295 252 337 266 364 294 C382 313 388 343 375 365 C346 397 278 408 195 401 C131 396 88 375 71 342 C64 328 66 315 77 300Z" fill="url(#horse)" stroke="#020307" stroke-width="13"/>
+    <path d="M319 292 C332 250 339 206 355 171 C371 136 393 111 425 103 C453 97 480 108 491 129 C502 151 489 174 466 184 C448 192 428 190 415 203 C401 218 404 249 398 280 C392 315 379 338 355 351Z" fill="url(#horse)" stroke="#020307" stroke-width="13"/>
+    <path d="M419 103 L407 69 L436 94 M452 105 L469 73 L475 112" fill="url(#horse)" stroke="#020307" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M441 128 C459 126 473 135 476 148 C466 161 445 166 425 160 C414 153 416 138 423 132Z" fill="#0a0b10" stroke="#020307" stroke-width="5"/>
+    <circle cx="457" cy="139" r="5" fill="#fff0a4" filter="url(#glow)"/>
+    <path d="M348 176 C367 151 388 137 410 129" fill="none" stroke="#fff0a4" stroke-opacity=".28" stroke-width="5"/>
+    <!-- tail -->
+    <path d="M83 319 C35 307 31 274 51 250 C58 282 78 282 100 291 C86 313 65 336 43 344 C54 327 68 318 83 319Z" fill="url(#horse)" stroke="#020307" stroke-width="9"/>
+    <!-- articulated legs -->
+    <g fill="none" stroke="url(#horse)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M135 372 C129 410 118 437 124 468 L112 490"/>
+      <path d="M188 382 C183 419 176 446 184 474 L180 493"/>
+      <path d="M298 383 C311 418 323 443 316 470 L327 491"/>
+      <path d="M348 366 C362 402 374 430 366 462 L375 487"/>
+    </g>
+    <g fill="#07080c" stroke="#b27812" stroke-width="4">
+      <path d="M98 486 H129 L126 503 H94Z"/><path d="M167 489 H196 L194 505 H164Z"/>
+      <path d="M314 487 H344 L347 503 H317Z"/><path d="M362 483 H392 L396 499 H366Z"/>
+    </g>
+    <!-- saddle and barding -->
+    <path d="M161 263 C205 245 270 247 318 266 L304 319 C257 305 205 304 158 320Z" fill="#0b0c10" stroke="#b27812" stroke-width="7"/>
+    <path d="M102 286 C153 266 205 264 254 274 L242 349 C190 342 139 343 93 357Z" fill="url(#armor)" stroke="#020307" stroke-width="8"/>
+    <path d="M102 292 C145 278 188 276 229 281" fill="none" stroke="#fff0a4" stroke-opacity=".55" stroke-width="4"/>
+    <path d="M259 274 C302 278 334 290 362 310 L352 360 C321 346 289 338 251 337Z" fill="url(#armor)" stroke="#020307" stroke-width="8"/>
+    
+    <g filter="url(#shadow)">
+      <!-- horse mane and golden bridle -->
+      <path d="M363 174 C348 185 341 210 340 241 C352 221 365 210 380 203 C364 233 367 259 378 280" fill="#f6d36b" stroke="#5a3b0a" stroke-width="6"/>
+      <path d="M417 124 L471 144" stroke="#f3d268" stroke-width="6"/><path d="M440 160 Q420 179 401 181" fill="none" stroke="#f3d268" stroke-width="4"/>
+      <!-- knight greaves around saddle -->
+      <path d="M224 225 C222 267 218 303 212 337" stroke="#3b2b12" stroke-width="22" stroke-linecap="round"/><path d="M270 225 C274 268 279 302 285 336" stroke="#3b2b12" stroke-width="22" stroke-linecap="round"/>
+      <path d="M198 328 L222 334 L215 358 L190 351Z M278 333 L301 327 L309 350 L285 359Z" fill="url(#armor2)" stroke="#020307" stroke-width="5"/>
+      <!-- royal cape -->
+      <path d="M213 143 C183 171 176 218 184 261 L158 302 L195 288 L183 327 L226 286 L238 243Z" fill="#7b0c1c" stroke="#020307" stroke-width="8"/>
+      <!-- heavy plate torso -->
+      <path d="M204 131 Q249 105 294 132 L302 220 Q250 252 199 220Z" fill="url(#armor2)" stroke="#020307" stroke-width="10"/>
+      <path d="M220 146 L249 130 L279 146 L274 206 L249 224 L224 206Z" fill="#3a290a" stroke="#d9a92e" stroke-width="6"/>
+      <path d="M203 146 L169 163 L176 198 L214 185Z M295 146 L329 163 L322 198 L284 185Z" fill="url(#armor2)" stroke="#020307" stroke-width="8"/>
+      <!-- crowned jousting helm -->
+      <path d="M209 130 Q211 75 250 61 Q289 75 291 130 L276 157 H224Z" fill="url(#armor2)" stroke="#020307" stroke-width="10"/>
+      <path d="M220 119 H280" stroke="#3a2a0c" stroke-width="8"/>
+      <path d="M226 118 L241 115 M259 115 L274 118" stroke="#fff5bf" stroke-width="4"/>
+      <path d="M215 78 L228 40 L246 68 L260 27 L275 69 L294 43 L286 82" fill="url(#armor2)" stroke="#5d4512" stroke-width="6"/>
+      <!-- long tournament lance -->
+      <path d="M297 214 L505 26" stroke="#020307" stroke-width="26" stroke-linecap="round"/><path d="M297 214 L505 26" stroke="#e6c76a" stroke-width="12" stroke-linecap="round"/>
+      <path d="M488 45 L531 3 L548 25 L517 64Z" fill="url(#armor2)" stroke="#5f430e" stroke-width="6"/>
+      <circle cx="299" cy="213" r="12" fill="#fff1a4" stroke="#5f430e" stroke-width="5"/>
+      <!-- gold highlights on barding, integrated not floating -->
+      <path d="M120 306 C155 294 188 291 220 294" fill="none" stroke="#fff0a4" stroke-width="4" opacity=".75"/>
+      <path d="M275 296 C306 301 330 309 350 322" fill="none" stroke="#fff0a4" stroke-width="4" opacity=".75"/>
+    </g>
+</svg>

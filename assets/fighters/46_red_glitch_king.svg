@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-label="Roter Glitch-König"><defs>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7f7f7"/><stop offset=".18" stop-color="#9d1630"/><stop offset=".58" stop-color="#292d34"/><stop offset="1" stop-color="#08090c"/></linearGradient>
+<linearGradient id="cloth" x1="0" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#9d1630"/><stop offset=".48" stop-color="#19080d"/><stop offset="1" stop-color="#07080b"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#262933"/><stop offset=".55" stop-color="#0c0e13"/><stop offset="1" stop-color="#020306"/></linearGradient>
+<filter id="shadow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#000" flood-opacity=".7"/></filter>
+<filter id="glow" x="-120%" y="-120%" width="340%" height="340%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<ellipse cx="210" cy="497" rx="120" ry="15" fill="#000" opacity=".42"/><g filter="url(#shadow)">
+<!-- corrupted king, clean anatomy --> <path d="M153 205 C114 224 99 267 111 343 C137 317 155 315 180 339 L171 208Z" fill="#26070c" stroke="#780f20" stroke-width="7"/>
+<ellipse cx="210" cy="140" rx="32" ry="36" fill="#7d2a37" stroke="#0b0608" stroke-width="7"/><path d="M176 137 Q181 102 210 98 Q239 102 244 137 L237 170 H183Z" fill="#12080b" stroke="#8b1126" stroke-width="7"/><path d="M188 145 H232" stroke="#ff3555" stroke-width="6"/>
+<!-- cracked crown --> <path d="M172 112 L181 72 L199 98 L210 53 L220 99 L239 73 L248 112" fill="none" stroke="#ff284a" stroke-width="8"/><path d="M210 53 L203 83 L216 90" fill="none" stroke="#050506" stroke-width="5"/>
+<path d="M157 200 Q210 169 263 200 L251 347 Q210 373 169 347Z" fill="#15080c" stroke="#5b0b17" stroke-width="9"/><path d="M176 214 L210 190 L244 214 L237 315 L210 340 L183 315Z" fill="#2b0b14" stroke="#d11b38" stroke-width="6"/>
+<path d="M158 212 L109 190 L94 245 L170 255Z M262 212 L311 190 L326 245 L250 255Z" fill="#21090f" stroke="#94132a" stroke-width="8"/>
+<path d="M168 227 Q136 260 148 321 M252 227 Q284 260 272 321" stroke="#6e2934" stroke-width="24" stroke-linecap="round"/>
+<path d="M184 348 L174 449 L194 486 M236 348 L246 449 L226 486" stroke="#1a1215" stroke-width="31" stroke-linecap="round"/>
+<!-- scepter --> <path d="M281 355 L348 181" stroke="#21191c" stroke-width="14"/><path d="M281 355 L348 181" stroke="#8d8588" stroke-width="7"/><path d="M347 168 L361 189 L347 210 L333 189Z" fill="#ff284a" stroke="#ffd1d8" stroke-width="4"/>
+<!-- controlled glitch cuts integrated on body --> <path d="M147 254 H177 M238 231 H280 M181 334 H221" stroke="#ff3151" stroke-width="6"/><path d="M161 263 H184 M249 239 H267" stroke="#ffffff" stroke-width="3" opacity=".75"/>
+</g></svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-label="Wächter der Herde"><defs>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7f7f7"/><stop offset=".18" stop-color="#b68d2e"/><stop offset=".58" stop-color="#292d34"/><stop offset="1" stop-color="#08090c"/></linearGradient>
+<linearGradient id="cloth" x1="0" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#b68d2e"/><stop offset=".48" stop-color="#45330d"/><stop offset="1" stop-color="#07080b"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#262933"/><stop offset=".55" stop-color="#0c0e13"/><stop offset="1" stop-color="#020306"/></linearGradient>
+<filter id="shadow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#000" flood-opacity=".7"/></filter>
+<filter id="glow" x="-120%" y="-120%" width="340%" height="340%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<ellipse cx="210" cy="497" rx="120" ry="15" fill="#000" opacity=".42"/><g filter="url(#shadow)">
+<!-- horse-themed human guardian --> <path d="M155 206 C121 222 102 261 112 327 C137 306 154 305 177 329 L170 209Z" fill="#3a2b0c" stroke="#b78b25" stroke-width="6"/>
+<ellipse cx="210" cy="141" rx="31" ry="35" fill="#9a7152" stroke="#261c08" stroke-width="7"/><path d="M175 137 Q181 100 210 96 Q239 100 245 137 L239 170 H181Z" fill="#59410f" stroke="#c99b2d" stroke-width="7"/><path d="M190 143 H201 M219 143 H230" stroke="#fff2ad" stroke-width="5"/>
+<!-- horsehair crest --> <path d="M210 94 Q181 62 194 42 Q211 61 210 94 Q239 62 226 42 Q209 61 210 94Z" fill="#d2a83d"/>
+<path d="M157 200 Q210 170 263 200 L251 345 Q210 373 169 345Z" fill="#45330d" stroke="#241a07" stroke-width="9"/><path d="M176 214 L210 191 L244 214 L237 314 L210 339 L183 314Z" fill="#6c5217" stroke="#d7b04a" stroke-width="6"/>
+<path d="M157 212 L107 190 L92 244 L170 255Z M263 212 L313 190 L328 244 L250 255Z" fill="#5e4612" stroke="#b88d29" stroke-width="8"/>
+<path d="M169 227 Q137 258 149 321 M251 227 Q283 258 271 321" stroke="#9a7152" stroke-width="24" stroke-linecap="round"/>
+<path d="M184 346 L175 449 L194 486 M236 346 L245 449 L226 486" stroke="#2e291c" stroke-width="31" stroke-linecap="round"/>
+<!-- horseshoe shield and spear --> <path d="M92 257 Q123 222 154 257 L149 333 Q123 361 97 333Z" fill="#4f3d15" stroke="#d4ae4a" stroke-width="7"/><path d="M108 276 Q123 261 138 276 L136 308 Q123 325 110 308Z" fill="none" stroke="#f2db83" stroke-width="7"/><path d="M279 351 L369 176" stroke="#342d1d" stroke-width="14"/><path d="M279 351 L369 176" stroke="#c9bd8f" stroke-width="7"/><path d="M358 190 L394 151 L405 176 L377 212Z" fill="#d1a63d" stroke="#fff0aa" stroke-width="5"/>
+</g></svg>

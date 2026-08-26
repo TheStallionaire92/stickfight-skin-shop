@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-label="Blutkaiser"><defs>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7f7f7"/><stop offset=".18" stop-color="#9e1730"/><stop offset=".58" stop-color="#292d34"/><stop offset="1" stop-color="#08090c"/></linearGradient>
+<linearGradient id="cloth" x1="0" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#9e1730"/><stop offset=".48" stop-color="#30070e"/><stop offset="1" stop-color="#07080b"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#262933"/><stop offset=".55" stop-color="#0c0e13"/><stop offset="1" stop-color="#020306"/></linearGradient>
+<filter id="shadow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#000" flood-opacity=".7"/></filter>
+<filter id="glow" x="-120%" y="-120%" width="340%" height="340%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<ellipse cx="210" cy="497" rx="120" ry="15" fill="#000" opacity=".42"/><g filter="url(#shadow)">
+<!-- imperial crimson coat --> <path d="M146 206 Q210 165 274 206 L265 354 Q210 388 155 354Z" fill="#2b080d" stroke="#6d0b18" stroke-width="9"/>
+<path d="M164 218 L210 189 L256 218 L246 324 L210 349 L174 324Z" fill="#520b16" stroke="#ba2036" stroke-width="6"/>
+<path d="M154 207 L104 189 L88 244 L166 257Z M266 207 L316 189 L332 244 L254 257Z" fill="#471018" stroke="#a8152b" stroke-width="8"/>
+<!-- pale imperial face --> <ellipse cx="210" cy="140" rx="31" ry="36" fill="#c9a9a7" stroke="#10070a" stroke-width="7"/><path d="M176 136 Q183 104 210 101 Q239 104 244 136" fill="#1a0b10"/><path d="M188 147 H201 M219 147 H232" stroke="#ff2f4d" stroke-width="5"/>
+<!-- crown --> <path d="M173 112 L182 73 L199 99 L210 57 L221 99 L238 73 L247 112Z" fill="#66101e" stroke="#d43a50" stroke-width="6"/>
+<!-- arms --> <path d="M166 227 Q132 260 143 323 M254 227 Q288 260 277 323" stroke="#b59594" stroke-width="24" stroke-linecap="round"/>
+<path d="M136 316 L161 310 L168 342 L135 346Z M259 310 L284 316 L285 346 L252 342Z" fill="#5b0d19" stroke="#16070a" stroke-width="5"/>
+<!-- legs and coat split --> <path d="M184 352 L173 449 L193 487 M236 352 L247 449 L227 487" stroke="#21161a" stroke-width="31" stroke-linecap="round"/><path d="M169 475 H206 L201 501 H151Z M214 475 H251 L269 501 H219Z" fill="#3d0b13" stroke="#16070a" stroke-width="7"/>
+<!-- halberd --> <path d="M283 360 L363 172" stroke="#261b1d" stroke-width="13"/><path d="M283 360 L363 172" stroke="#a9a8ad" stroke-width="7"/><path d="M351 185 L397 155 L385 205 L347 218Z" fill="#9d1830" stroke="#f0c2c9" stroke-width="5"/>
+<!-- blood jewel --> <path d="M193 251 L210 232 L227 251 L219 287 L201 287Z" fill="#a31029" stroke="#ff5a70" stroke-width="5"/>
+</g></svg>

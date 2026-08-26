@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-label="Gefallener Engel"><defs>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7f7f7"/><stop offset=".18" stop-color="#7f54b8"/><stop offset=".58" stop-color="#292d34"/><stop offset="1" stop-color="#08090c"/></linearGradient>
+<linearGradient id="cloth" x1="0" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#7f54b8"/><stop offset=".48" stop-color="#201629"/><stop offset="1" stop-color="#07080b"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#262933"/><stop offset=".55" stop-color="#0c0e13"/><stop offset="1" stop-color="#020306"/></linearGradient>
+<filter id="shadow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#000" flood-opacity=".7"/></filter>
+<filter id="glow" x="-120%" y="-120%" width="340%" height="340%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<ellipse cx="210" cy="497" rx="120" ry="15" fill="#000" opacity=".42"/><g filter="url(#shadow)">
+<!-- black feather wings remain behind the character, not pasted over it -->
+<path d="M171 220 C112 177 61 190 34 277 C92 239 130 254 174 324Z" fill="#0b0b10" stroke="#392651" stroke-width="8"/>
+<path d="M249 220 C308 177 359 190 386 277 C328 239 290 254 246 324Z" fill="#0b0b10" stroke="#392651" stroke-width="8"/>
+<path d="M155 246 C111 227 82 249 68 309 C109 279 138 292 170 337Z" fill="#17121f" stroke="#4e356d" stroke-width="6"/>
+<path d="M265 246 C309 227 338 249 352 309 C311 279 282 292 250 337Z" fill="#17121f" stroke="#4e356d" stroke-width="6"/>
+<!-- body -->
+<ellipse cx="210" cy="142" rx="31" ry="36" fill="#a47f76" stroke="#08090d" stroke-width="7"/>
+<path d="M178 142 Q182 105 210 103 Q240 106 243 143 Q223 131 210 132 Q195 132 178 142Z" fill="#17131e"/>
+<path d="M188 148 H200 M220 148 H232" stroke="#b889ff" stroke-width="5"/>
+<path d="M164 199 Q210 171 256 199 L247 335 Q210 360 173 335Z" fill="url(#dark)" stroke="#090a0f" stroke-width="9"/>
+<path d="M180 214 L210 194 L240 214 L233 305 L210 327 L187 305Z" fill="#21172d" stroke="#8d63c5" stroke-width="6"/>
+<path d="M161 211 L122 197 L112 240 L171 245Z M259 211 L298 197 L308 240 L249 245Z" fill="#191421" stroke="#6c489a" stroke-width="7"/>
+<path d="M169 225 Q141 255 152 319" stroke="#8d6f69" stroke-width="24" stroke-linecap="round"/>
+<path d="M251 225 Q279 255 268 319" stroke="#8d6f69" stroke-width="24" stroke-linecap="round"/>
+<path d="M145 309 L166 305 L173 336 L145 339Z M254 305 L275 309 L275 339 L247 336Z" fill="#332244" stroke="#0a0a0e" stroke-width="5"/>
+<path d="M184 337 L173 443 L194 483 M236 337 L247 443 L226 483" stroke="#171820" stroke-width="31" stroke-linecap="round"/>
+<path d="M158 475 H205 L201 500 H149Z M215 475 H262 L271 500 H219Z" fill="#21182c" stroke="#08090d" stroke-width="7"/>
+<!-- broken halo -->
+<path d="M177 89 Q210 67 243 89" fill="none" stroke="#9e78d0" stroke-width="7" stroke-dasharray="29 17" filter="url(#glow)"/>
+<!-- blade -->
+<path d="M276 343 L374 188" stroke="#05060a" stroke-width="28" stroke-linecap="round"/>
+<path d="M276 343 L374 188" stroke="#b9bcc8" stroke-width="17" stroke-linecap="round"/>
+<path d="M276 343 L374 188" stroke="#9f6ed8" stroke-width="4" stroke-linecap="round"/>
+</g></svg>

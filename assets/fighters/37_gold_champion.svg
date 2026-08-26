@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-label="Gold Champion"><defs>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7f7f7"/><stop offset=".18" stop-color="#d6a735"/><stop offset=".58" stop-color="#292d34"/><stop offset="1" stop-color="#08090c"/></linearGradient>
+<linearGradient id="cloth" x1="0" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#d6a735"/><stop offset=".48" stop-color="#4c3512"/><stop offset="1" stop-color="#07080b"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#262933"/><stop offset=".55" stop-color="#0c0e13"/><stop offset="1" stop-color="#020306"/></linearGradient>
+<filter id="shadow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#000" flood-opacity=".7"/></filter>
+<filter id="glow" x="-120%" y="-120%" width="340%" height="340%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<ellipse cx="210" cy="497" rx="120" ry="15" fill="#000" opacity=".42"/><g filter="url(#shadow)">
+<!-- red royal cape --> <path d="M158 205 C115 226 96 280 111 361 C137 333 155 328 180 345 L171 209Z" fill="#68191b" stroke="#c79327" stroke-width="6"/>
+<path d="M262 205 C305 226 324 280 309 361 C283 333 265 328 240 345 L249 209Z" fill="#68191b" stroke="#c79327" stroke-width="6"/>
+<!-- head and laurel --> <ellipse cx="210" cy="143" rx="31" ry="35" fill="#a87658" stroke="#16120b" stroke-width="7"/><path d="M178 139 Q183 109 210 106 Q238 109 242 139" fill="#5a3c23"/><path d="M177 116 Q210 82 243 116" fill="none" stroke="#e4b93f" stroke-width="8" stroke-dasharray="10 7"/>
+<!-- champion plate --> <path d="M158 199 Q210 165 262 199 L251 344 Q210 371 169 344Z" fill="url(#metal)" stroke="#3a2b08" stroke-width="9"/>
+<path d="M175 215 L210 190 L245 215 L236 310 L210 337 L184 310Z" fill="#28200f" stroke="#f4d36d" stroke-width="6"/>
+<path d="M158 211 L109 185 L91 238 L170 253Z M262 211 L311 185 L329 238 L250 253Z" fill="#b88419" stroke="#5a420c" stroke-width="8"/>
+<path d="M170 226 Q140 259 151 322 M250 226 Q280 259 269 322" stroke="#a87658" stroke-width="25" stroke-linecap="round"/>
+<path d="M145 313 L168 308 L174 340 L144 344Z M252 308 L275 313 L276 344 L246 340Z" fill="#d5a82e" stroke="#5a420c" stroke-width="6"/>
+<path d="M185 345 L176 448 L195 484 M235 345 L244 448 L225 484" stroke="#24221d" stroke-width="32" stroke-linecap="round"/>
+<path d="M159 476 H207 L202 501 H150Z M213 476 H261 L270 501 H218Z" fill="#b27f17" stroke="#59410b" stroke-width="7"/>
+<!-- lion shield --> <path d="M105 265 Q127 242 149 265 L145 332 Q127 353 109 332Z" fill="#8d6316" stroke="#f1d26b" stroke-width="6"/><circle cx="127" cy="294" r="16" fill="#e4b43c"/><path d="M117 289 L127 278 L137 289 L132 305 L122 305Z" fill="#6a4710"/>
+<!-- sword --> <path d="M273 348 L375 192" stroke="#332b17" stroke-width="29"/><path d="M273 348 L375 192" stroke="#d7d3c6" stroke-width="18"/><path d="M273 348 L375 192" stroke="#f4d36d" stroke-width="4"/>
+</g></svg>

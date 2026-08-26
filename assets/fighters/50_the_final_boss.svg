@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" role="img" aria-label="The Final Boss">
+<defs>
+    <linearGradient id="armor" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6d9c7"/><stop offset=".2" stop-color="#a60026"/>
+      <stop offset=".54" stop-color="#252a33"/><stop offset="1" stop-color="#05070b"/>
+    </linearGradient>
+    <linearGradient id="armor2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef1f5"/><stop offset=".18" stop-color="#e6d9c7"/>
+      <stop offset=".58" stop-color="#5a616d"/><stop offset="1" stop-color="#101319"/>
+    </linearGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2=".9" y2="1">
+      <stop offset="0" stop-color="#a60026"/><stop offset=".3" stop-color="#25151e"/>
+      <stop offset=".68" stop-color="#0c0d12"/><stop offset="1" stop-color="#020306"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5d2935"/><stop offset="1" stop-color="#3a2424"/>
+    </linearGradient>
+    <linearGradient id="horse" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6d9c7"/><stop offset=".18" stop-color="#a60026"/>
+      <stop offset=".52" stop-color="#1a1c23"/><stop offset="1" stop-color="#020306"/>
+    </linearGradient>
+    <radialGradient id="core"><stop offset="0" stop-color="#fff"/><stop offset=".18" stop-color="#e6d9c7"/><stop offset=".48" stop-color="#a60026"/><stop offset="1" stop-color="#cf002e" stop-opacity="0"/></radialGradient>
+    <filter id="shadow" x="-70%" y="-70%" width="240%" height="240%"><feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity=".8"/></filter>
+    <filter id="glow" x="-120%" y="-120%" width="340%" height="340%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+
+    <ellipse cx="260" cy="500" rx="142" ry="17" fill="#000" opacity=".5"/>
+    <path d="M260 270 C160 245 94 273 61 360 C112 328 154 339 196 392 C149 379 121 397 98 444 C156 426 207 427 260 461 C313 427 364 426 422 444 C399 397 371 379 324 392 C366 339 408 328 459 360 C426 273 360 245 260 270Z" fill="#870021" opacity=".16" filter="url(#soft)"/>
+    <g filter="url(#shadow)">
+      <!-- enormous symmetric demon wings behind body -->
+      <path d="M188 224 C127 176 69 165 22 205 C70 213 105 243 127 286 C84 274 50 289 26 326 C91 310 141 332 183 386 L216 308Z" fill="#0a080d" stroke="#020307" stroke-width="12"/>
+      <path d="M332 224 C393 176 451 165 498 205 C450 213 415 243 393 286 C436 274 470 289 494 326 C429 310 379 332 337 386 L304 308Z" fill="#0a080d" stroke="#020307" stroke-width="12"/>
+      <path d="M183 235 C125 201 87 204 51 220 M337 235 C395 201 433 204 469 220" fill="none" stroke="#b6002d" stroke-width="7"/>
+      <path d="M168 280 C117 262 83 273 53 300 M352 280 C403 262 437 273 467 300" fill="none" stroke="#5b0c21" stroke-width="6"/>
+      <!-- long armored legs -->
+      <path d="M220 348 L204 476" stroke="#141017" stroke-width="38" stroke-linecap="round"/><path d="M300 348 L316 476" stroke="#141017" stroke-width="38" stroke-linecap="round"/>
+      <path d="M183 470 H231 L226 504 H166Z M289 470 H337 L354 504 H294Z" fill="#09070b" stroke="#b4002b" stroke-width="7"/>
+      <!-- narrow-waist massive torso -->
+      <path d="M181 188 Q260 142 339 188 L324 354 Q260 396 196 354Z" fill="url(#armor)" stroke="#020307" stroke-width="13"/>
+      <path d="M211 205 L260 176 L309 205 L300 322 L260 353 L220 322Z" fill="#08080d" stroke="#8d0e29" stroke-width="7"/>
+      <!-- giant layered shoulders with bone blades -->
+      <path d="M184 207 L100 170 L66 249 L190 273Z M336 207 L420 170 L454 249 L330 273Z" fill="url(#armor)" stroke="#020307" stroke-width="11"/>
+      <path d="M118 178 L83 111 L158 159Z M402 178 L437 111 L362 159Z" fill="url(#armor2)" stroke="#020307" stroke-width="8"/>
+      <path d="M157 205 L118 141 M363 205 L402 141" stroke="#d5cec4" stroke-width="6" opacity=".75"/>
+      <!-- long armored arms -->
+      <path d="M180 244 C141 274 137 325 153 377" stroke="#5b2934" stroke-width="32" stroke-linecap="round"/><path d="M340 244 C379 274 383 325 367 377" stroke="#5b2934" stroke-width="32" stroke-linecap="round"/>
+      <path d="M139 366 L169 356 L177 401 L143 411Z M351 356 L381 366 L377 411 L343 401Z" fill="url(#armor)" stroke="#020307" stroke-width="8"/>
+      <!-- abyss core, raid-boss language -->
+      <circle cx="260" cy="285" r="54" fill="url(#core)" opacity=".28" filter="url(#glow)"/>
+      <circle cx="260" cy="285" r="33" fill="#050207" stroke="#d2143b" stroke-width="7"/>
+      <circle cx="260" cy="285" r="17" fill="url(#core)" filter="url(#glow)"/>
+      <path d="M260 253 L270 273 L294 285 L270 297 L260 320 L250 297 L226 285 L250 273Z" fill="#d2143b" opacity=".75"/>
+      <!-- monstrous helmet / skull mask -->
+      <path d="M189 153 C194 81 223 42 260 37 C297 42 326 81 331 153 L310 205 L279 230 L260 238 L241 230 L210 205Z" fill="url(#armor2)" stroke="#020307" stroke-width="13"/>
+      <path d="M207 151 L236 133 L252 154 L236 179 L210 177Z M313 151 L284 133 L268 154 L284 179 L310 177Z" fill="#06070b"/>
+      <!-- six eyes -->
+      <g fill="#ff294f" stroke="#39000d" stroke-width="4" filter="url(#glow)"><path d="M211 131 L235 120 L246 132 L229 145Z"/><path d="M309 131 L285 120 L274 132 L291 145Z"/><path d="M221 162 L242 155 L249 168 L232 176Z"/><path d="M299 162 L278 155 L271 168 L288 176Z"/><path d="M248 101 L260 92 L272 101 L260 111Z"/><path d="M249 191 L260 184 L271 191 L260 199Z"/></g>
+      <!-- horns and crown spikes, much larger -->
+      <path d="M208 106 C149 100 99 65 67 15 C116 48 168 42 219 67Z" fill="url(#armor2)" stroke="#020307" stroke-width="10"/>
+      <path d="M312 106 C371 100 421 65 453 15 C404 48 352 42 301 67Z" fill="url(#armor2)" stroke="#020307" stroke-width="10"/>
+      <path d="M224 72 L205 14 L246 58 M260 59 L260 2 L278 61 M296 72 L317 14 L276 58" fill="#1a1a20" stroke="#020307" stroke-width="8"/>
+      <!-- fanged mouth -->
+      <path d="M220 191 Q260 223 300 191 Q289 239 260 247 Q231 239 220 191Z" fill="#020205" stroke="#5e071a" stroke-width="6"/>
+      <g fill="#e8e3d8"><path d="M230 198 L240 222 L248 201Z"/><path d="M249 204 L260 230 L270 204Z"/><path d="M272 201 L280 222 L290 198Z"/></g>
+      <!-- boss greatsword -->
+      <path d="M359 389 L450 125" stroke="#020307" stroke-width="34" stroke-linecap="round"/><path d="M359 389 L450 125" stroke="url(#armor2)" stroke-width="19" stroke-linecap="round"/><path d="M359 389 L450 125" stroke="#cc153a" stroke-width="5"/>
+      <path d="M426 150 L484 73 L512 98 L472 174Z" fill="#1a0b11" stroke="#c81339" stroke-width="9"/>
+      <path d="M432 150 L473 111" stroke="#efe9df" stroke-width="5"/>
+      <!-- battle scars -->
+      <g fill="none" stroke="#d4153c" stroke-opacity=".48" stroke-width="4"><path d="M223 82 L245 94 L238 112"/><path d="M301 88 L282 101 L289 117"/><path d="M218 304 L239 315 L230 335"/><path d="M302 304 L281 315 L290 335"/></g>
+    </g>
+</svg>

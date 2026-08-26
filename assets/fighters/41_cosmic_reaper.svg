@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-label="Kosmischer Schnitter"><defs>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7f7f7"/><stop offset=".18" stop-color="#0b0c0e"/><stop offset=".58" stop-color="#292d34"/><stop offset="1" stop-color="#08090c"/></linearGradient>
+<linearGradient id="cloth" x1="0" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#0b0c0e"/><stop offset=".48" stop-color="#2d3137"/><stop offset="1" stop-color="#07080b"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#262933"/><stop offset=".55" stop-color="#0c0e13"/><stop offset="1" stop-color="#020306"/></linearGradient>
+<filter id="shadow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#000" flood-opacity=".7"/></filter>
+<filter id="glow" x="-120%" y="-120%" width="340%" height="340%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<ellipse cx="210" cy="497" rx="118" ry="15" fill="#000" opacity=".46"/>
+<!-- green spectral haze behind the reaper, shaped like smoke instead of rings -->
+<path d="M102 401 C75 365 84 324 108 294 C87 257 100 211 138 183 C157 169 174 154 210 151 C246 154 263 169 282 183 C320 211 333 257 312 294 C336 324 345 365 318 401 C286 447 134 447 102 401Z" fill="#2dff6f" opacity=".10" filter="url(#soft)"/>
+<g filter="url(#shadow)">
+  <!-- ragged black cloak behind but open in front -->
+  <path d="M150 193 Q210 152 270 193 L283 309 L257 350 L246 303 L230 326 L210 305 L190 326 L174 303 L163 350 L137 309Z" fill="#050608" stroke="#20242a" stroke-width="8"/>
+  <path d="M167 303 Q149 357 138 447 L180 423 L203 334Z" fill="#050608" stroke="#1a1d22" stroke-width="7"/>
+  <path d="M253 303 Q271 357 282 447 L240 423 L217 334Z" fill="#050608" stroke="#1a1d22" stroke-width="7"/>
+  <!-- deep black hood -->
+  <path d="M159 160 Q164 93 210 74 Q256 93 261 160 L243 203 H177Z" fill="#040507" stroke="#24282e" stroke-width="9"/>
+  <path d="M174 151 Q180 108 210 98 Q240 108 246 151 L235 182 Q210 198 185 182Z" fill="#121417"/>
+  <!-- grey skull -->
+  <path d="M184 126 Q186 102 210 96 Q234 102 236 126 L232 158 Q221 178 210 179 Q199 178 188 158Z" fill="#8a8f96" stroke="#363a41" stroke-width="6"/>
+  <path d="M189 132 L202 130 M218 130 L231 132" stroke="#ff1f32" stroke-width="7" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M203 146 L210 153 L217 146" fill="none" stroke="#41454c" stroke-width="4"/>
+  <path d="M194 160 H226" stroke="#3a3e45" stroke-width="5" stroke-dasharray="5 4"/>
+  <!-- rib cage -->
+  <path d="M187 197 Q210 181 233 197 L230 279 Q210 300 190 279Z" fill="#111317" stroke="#3c4147" stroke-width="5"/>
+  <path d="M195 209 Q210 201 225 209 M193 226 Q210 216 227 226 M194 243 Q210 234 226 243 M198 260 Q210 251 222 260" fill="none" stroke="#8b9097" stroke-width="6" stroke-linecap="round"/>
+  <path d="M210 198 V274" stroke="#777c83" stroke-width="6"/>
+  <!-- bony shoulders and arms -->
+  <circle cx="176" cy="208" r="11" fill="#777c83" stroke="#30343a" stroke-width="4"/>
+  <circle cx="244" cy="208" r="11" fill="#777c83" stroke="#30343a" stroke-width="4"/>
+  <path d="M174 215 Q145 244 147 291" stroke="#8b9097" stroke-width="12" stroke-linecap="round"/>
+  <path d="M246 215 Q270 236 279 265" stroke="#8b9097" stroke-width="12" stroke-linecap="round"/>
+  <!-- hands visibly gripping the scythe -->
+  <circle cx="148" cy="295" r="11" fill="#858a91" stroke="#34383e" stroke-width="4"/>
+  <circle cx="282" cy="275" r="11" fill="#858a91" stroke="#34383e" stroke-width="4"/>
+  <!-- skeletal legs visible below open cloak -->
+  <path d="M199 282 L184 419 L176 480" stroke="#7e838a" stroke-width="15" stroke-linecap="round"/>
+  <path d="M221 282 L236 419 L244 480" stroke="#7e838a" stroke-width="15" stroke-linecap="round"/>
+  <path d="M160 481 H190 M230 481 H260" stroke="#656a70" stroke-width="12"/>
+  <!-- oversized two-handed scythe -->
+  <path d="M146 301 L335 125" stroke="#252925" stroke-width="20" stroke-linecap="round"/>
+  <path d="M146 301 L335 125" stroke="#656d66" stroke-width="9" stroke-linecap="round"/>
+  <path d="M324 137 Q365 92 414 105 Q394 144 355 170 Q334 184 307 170 Q323 157 324 137Z" fill="#b7bdb9" stroke="#2f332f" stroke-width="7"/>
+  <path d="M329 142 Q365 111 397 114" fill="none" stroke="#f0f4f1" stroke-width="4"/>
+  <!-- thumb/finger bars around handle -->
+  <path d="M141 291 L154 301 M274 266 L288 277" stroke="#b2b6bb" stroke-width="4"/>
+  <!-- organic green soul flames -->
+  <path d="M106 342 Q83 314 103 288 Q104 313 122 322 Q133 341 122 360 Q117 347 106 342Z" fill="#39ff72" opacity=".78" filter="url(#glow)"/>
+  <path d="M314 385 Q292 357 309 333 Q313 357 327 367 Q337 385 327 403 Q321 390 314 385Z" fill="#39ff72" opacity=".68" filter="url(#glow)"/>
+  <path d="M302 228 Q283 205 299 185 Q301 205 313 214 Q321 228 314 243 Q309 233 302 228Z" fill="#39ff72" opacity=".60" filter="url(#glow)"/>
+</g>
+</svg>

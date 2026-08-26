@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 520" role="img" aria-label="Celestial Samurai">
+<defs>
+    <linearGradient id="armor" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff2a6"/><stop offset=".2" stop-color="#d3a72e"/>
+      <stop offset=".54" stop-color="#252a33"/><stop offset="1" stop-color="#05070b"/>
+    </linearGradient>
+    <linearGradient id="armor2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef1f5"/><stop offset=".18" stop-color="#fff2a6"/>
+      <stop offset=".58" stop-color="#5a616d"/><stop offset="1" stop-color="#101319"/>
+    </linearGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2=".9" y2="1">
+      <stop offset="0" stop-color="#d3a72e"/><stop offset=".3" stop-color="#25151e"/>
+      <stop offset=".68" stop-color="#0c0d12"/><stop offset="1" stop-color="#020306"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9a6b50"/><stop offset="1" stop-color="#3a2424"/>
+    </linearGradient>
+    <linearGradient id="horse" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff2a6"/><stop offset=".18" stop-color="#d3a72e"/>
+      <stop offset=".52" stop-color="#1a1c23"/><stop offset="1" stop-color="#020306"/>
+    </linearGradient>
+    <radialGradient id="core"><stop offset="0" stop-color="#fff"/><stop offset=".18" stop-color="#fff2a6"/><stop offset=".48" stop-color="#d3a72e"/><stop offset="1" stop-color="#e4c55f" stop-opacity="0"/></radialGradient>
+    <filter id="shadow" x="-70%" y="-70%" width="240%" height="240%"><feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity=".8"/></filter>
+    <filter id="glow" x="-120%" y="-120%" width="340%" height="340%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+
+    <ellipse cx="235" cy="498" rx="108" ry="15" fill="#000" opacity=".43"/>
+    <g filter="url(#shadow)">
+      <!-- hakama and legs -->
+      <path d="M197 330 L178 475 L218 487 L235 365Z M273 330 L292 475 L252 487 L235 365Z" fill="#091127" stroke="#020307" stroke-width="8"/>
+      <path d="M168 477 H217 L214 502 H158Z M253 477 H302 L312 502 H256Z" fill="#07101f" stroke="#d0ad45" stroke-width="5"/>
+      <!-- lamellar cuirass -->
+      <path d="M177 194 Q235 166 293 194 L283 338 Q235 369 187 338Z" fill="url(#armor)" stroke="#020307" stroke-width="11"/>
+      <path d="M202 207 L235 190 L268 207 L263 311 L235 334 L207 311Z" fill="#101a37" stroke="#d6b64d" stroke-width="6"/>
+      <!-- proper symmetric sode shoulder guards -->
+      <g fill="url(#armor2)" stroke="#020307" stroke-width="8">
+        <path d="M180 207 L107 196 L93 269 L173 276Z"/><path d="M290 207 L363 196 L377 269 L297 276Z"/>
+      </g>
+      <g fill="none" stroke="#d6b64d" stroke-width="4"><path d="M112 214 L169 220 M108 232 L171 238 M104 250 L171 256"/><path d="M358 214 L301 220 M362 232 L299 238 M366 250 L299 256"/></g>
+      <!-- arms/gauntlets -->
+      <path d="M171 246 C149 273 145 314 157 350" stroke="#8e614b" stroke-width="22" stroke-linecap="round"/><path d="M299 246 C321 273 325 314 313 350" stroke="#8e614b" stroke-width="22" stroke-linecap="round"/>
+      <path d="M145 339 L169 333 L176 370 L149 377Z M301 333 L325 339 L321 377 L294 370Z" fill="url(#armor)" stroke="#020307" stroke-width="6"/>
+      <!-- menpo + kabuto -->
+      <ellipse cx="235" cy="139" rx="42" ry="45" fill="#17203a" stroke="#020307" stroke-width="8"/>
+      <path d="M195 136 Q235 105 275 136 L269 172 Q235 193 201 172Z" fill="#0c1326" stroke="#d2b04b" stroke-width="5"/>
+      <path d="M207 143 L225 139 M245 139 L263 143" stroke="#fff6c0" stroke-width="5" stroke-linecap="round"/>
+      <path d="M210 162 L235 176 L260 162" fill="none" stroke="#8b6d21" stroke-width="4"/>
+      <path d="M184 129 Q190 76 235 62 Q280 76 286 129" fill="url(#armor)" stroke="#020307" stroke-width="9"/>
+      <path d="M191 102 Q235 77 279 102" fill="none" stroke="#f0d36d" stroke-width="5"/>
+      <path d="M204 82 Q235 27 267 82 Q239 69 204 82Z" fill="#f5d66e" stroke="#5d4714" stroke-width="5"/>
+      <!-- paired swords: katana + visible sheath -->
+      <path d="M303 367 L397 197" stroke="#020307" stroke-width="18"/><path d="M303 367 L397 197" stroke="#d4d9de" stroke-width="8"/><path d="M305 374 L385 232" stroke="#604717" stroke-width="13" opacity=".8"/>
+      <path d="M380 219 L412 184" stroke="#d9b24b" stroke-width="10"/>
+      <path d="M157 371 L94 278" stroke="#020307" stroke-width="15"/><path d="M157 371 L94 278" stroke="#262e45" stroke-width="8"/>
+      <!-- constellation etching integrated in armor -->
+      <g fill="#fff6c0" opacity=".82"><circle cx="220" cy="239" r="3"/><circle cx="248" cy="259" r="3"/><circle cx="229" cy="287" r="3"/></g><path d="M220 239 L248 259 L229 287" fill="none" stroke="#fff6c0" stroke-width="1.8" opacity=".65"/>
+    </g>
+</svg>

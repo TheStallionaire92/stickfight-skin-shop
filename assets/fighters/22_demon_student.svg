@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-label="Dämonenschüler">
+<defs>
+      <linearGradient id="armor" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff365f"/><stop offset=".28" stop-color="#8f43bd"/><stop offset=".58" stop-color="#211f27"/><stop offset="1" stop-color="#08090d"/></linearGradient>
+      <linearGradient id="cloth" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#8f43bd"/><stop offset=".5" stop-color="#241b29"/><stop offset="1" stop-color="#050609"/></linearGradient>
+      <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".18" stop-color="#c9d0d8"/><stop offset=".48" stop-color="#555f6c"/><stop offset=".72" stop-color="#171b21"/><stop offset="1" stop-color="#8f43bd"/></linearGradient>
+      <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c18974"/><stop offset="1" stop-color="#805a49"/></linearGradient>
+      <radialGradient id="core"><stop offset="0" stop-color="#fff"/><stop offset=".25" stop-color="#ff365f"/><stop offset="1" stop-color="#8f43bd" stop-opacity="0"/></radialGradient>
+      <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter>
+      <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity=".65"/></filter>
+    </defs>
+    <ellipse cx="210" cy="495" rx="112" ry="16" fill="#000" opacity=".38"/>
+    <ellipse cx="210" cy="325" rx="150" ry="168" fill="#b43dff" opacity="0.22" filter="url(#soft)"/>
+<g filter="url(#shadow)"><ellipse cx="210" cy="150" rx="31" ry="36" fill="url(#skin)" stroke="#09090c" stroke-width="6"/><path d="M178 145 L180 112 L194 126 L202 101 L214 124 L230 103 L236 129 L246 116 L241 150 Q210 132 178 145Z" fill="#28112f" stroke="#09090c" stroke-width="5"/><path d="M190 150 L202 148 M218 148 L230 150" stroke="#ff365f" stroke-width="4" stroke-linecap="round"/><path d="M168 205 Q210 181 252 205 L247 323 L272 445 L217 403 L210 450 L203 403 L148 445 L173 323Z" fill="url(#cloth)" stroke="#07080d" stroke-width="8"/>
+        <path d="M189 219 L210 206 L231 219 L225 305 L210 318 L195 305Z" fill="#17171c" stroke="#ff365f" stroke-width="4"/><path d="M187 334 Q181 404 177 477" stroke="#17161b" stroke-width="27" stroke-linecap="round"/><path d="M233 334 Q239 404 243 477" stroke="#17161b" stroke-width="27" stroke-linecap="round"/><path d="M159 477 H195 L197 497 H151Z M225 477 H261 L269 497 H223Z" fill="#4a2857" stroke="#08090d" stroke-width="6"/><path d="M169 226 Q142 258 153 320" stroke="#c18974" stroke-width="25" stroke-linecap="round"/><path d="M251 226 Q282 252 276 316" stroke="#c18974" stroke-width="25" stroke-linecap="round"/><path d="M145 307 L166 307 L169 334 L145 337Z M266 305 L287 305 L286 334 L262 334Z" fill="#8f43bd" stroke="#08090d" stroke-width="5"/><path d="M187 118 L170 78 L201 110 M233 118 L250 78 L219 110" fill="#291128" stroke="#ff365f" stroke-width="5"/><path d="M172 202 Q210 216 248 202" stroke="#fff" stroke-width="7"/>
+    <path d="M248 283 Q286 273 306 246" stroke="#ff365f" stroke-width="8" opacity=".65"/><path d="M277 327 L362 216" stroke="#090a0d" stroke-width="25" stroke-linecap="round"/>
+    <path d="M277 327 L362 216" stroke="url(#steel)" stroke-width="17" stroke-linecap="round"/>
+    <path d="M277 327 L362 216" stroke="#ff365f" stroke-width="3" stroke-linecap="round" opacity=".8"/><circle cx="130" cy="298" r="20" fill="none" stroke="#ff365f" stroke-width="4" opacity=".7"/><path d="M117 298 H143 M130 285 V311" stroke="#ff365f" stroke-width="3"/></g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-label="Drachenseele"><defs>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7f7f7"/><stop offset=".18" stop-color="#a54316"/><stop offset=".58" stop-color="#292d34"/><stop offset="1" stop-color="#08090c"/></linearGradient>
+<linearGradient id="cloth" x1="0" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#a54316"/><stop offset=".48" stop-color="#361208"/><stop offset="1" stop-color="#07080b"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#262933"/><stop offset=".55" stop-color="#0c0e13"/><stop offset="1" stop-color="#020306"/></linearGradient>
+<filter id="shadow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#000" flood-opacity=".7"/></filter>
+<filter id="glow" x="-120%" y="-120%" width="340%" height="340%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<ellipse cx="210" cy="497" rx="120" ry="15" fill="#000" opacity=".42"/><g filter="url(#shadow)">
+<!-- actual dragon wings --> <path d="M154 224 C106 179 64 190 37 266 C87 231 120 247 167 319Z" fill="#351008" stroke="#a13c12" stroke-width="8"/><path d="M266 224 C314 179 356 190 383 266 C333 231 300 247 253 319Z" fill="#351008" stroke="#a13c12" stroke-width="8"/>
+<!-- dragon head --> <path d="M171 139 Q179 98 210 92 Q241 98 249 139 L239 176 Q210 198 181 176Z" fill="#4d1b0e" stroke="#180806" stroke-width="8"/><path d="M178 113 L158 74 L193 101 M242 113 L262 74 L227 101" fill="#6b250e" stroke="#d46220" stroke-width="6"/><path d="M186 143 H200 M220 143 H234" stroke="#ffb438" stroke-width="5"/><path d="M194 171 Q210 180 226 171" stroke="#f0d0a4" stroke-width="4"/>
+<!-- scaled torso --> <path d="M158 199 Q210 170 262 199 L251 344 Q210 371 169 344Z" fill="#2a110b" stroke="#180806" stroke-width="9"/><path d="M175 214 L210 192 L245 214 L237 314 L210 338 L183 314Z" fill="#5a1f0d" stroke="#b54d1c" stroke-width="6"/>
+<path d="M158 212 L110 190 L94 241 L170 254Z M262 212 L310 190 L326 241 L250 254Z" fill="#4d1a0c" stroke="#a13c12" stroke-width="8"/>
+<path d="M169 226 Q139 260 151 321 M251 226 Q281 260 269 321" stroke="#5b2415" stroke-width="26" stroke-linecap="round"/>
+<!-- clawed legs/tail --> <path d="M184 344 L173 446 L194 483 M236 344 L247 446 L226 483" stroke="#36150c" stroke-width="32" stroke-linecap="round"/><path d="M157 478 H205 M215 478 H263" stroke="#1a0906" stroke-width="18"/><path d="M161 350 Q101 380 93 435 Q132 409 170 407" fill="none" stroke="#63230f" stroke-width="19" stroke-linecap="round"/>
+<!-- glaive --> <path d="M278 354 L362 180" stroke="#2c1a12" stroke-width="14"/><path d="M278 354 L362 180" stroke="#b7b5b0" stroke-width="7"/><path d="M351 193 Q383 162 406 171 Q393 206 357 224Z" fill="#d35d1d" stroke="#ffbf58" stroke-width="5"/>
+</g></svg>

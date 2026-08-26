@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-label="Regenbogen-Wahnsinn"><defs>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7f7f7"/><stop offset=".18" stop-color="#7e4ca3"/><stop offset=".58" stop-color="#292d34"/><stop offset="1" stop-color="#08090c"/></linearGradient>
+<linearGradient id="cloth" x1="0" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#7e4ca3"/><stop offset=".48" stop-color="#261833"/><stop offset="1" stop-color="#07080b"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#262933"/><stop offset=".55" stop-color="#0c0e13"/><stop offset="1" stop-color="#020306"/></linearGradient>
+<filter id="shadow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#000" flood-opacity=".7"/></filter>
+<filter id="glow" x="-120%" y="-120%" width="340%" height="340%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<ellipse cx="210" cy="497" rx="120" ry="15" fill="#000" opacity=".42"/><g filter="url(#shadow)">
+<!-- eccentric mage/clown --> <ellipse cx="210" cy="139" rx="31" ry="35" fill="#d0a680" stroke="#1a1124" stroke-width="7"/><path d="M176 138 Q181 104 210 101 Q239 104 244 138" fill="#38224b"/><path d="M176 117 L155 83 L191 105 M244 117 L265 83 L229 105" fill="#6d31a6" stroke="#ff4cc9" stroke-width="5"/>
+<path d="M187 147 H200" stroke="#42d8ff" stroke-width="5"/><path d="M220 147 H233" stroke="#ffdb45" stroke-width="5"/>
+<path d="M156 201 Q210 168 264 201 L251 347 Q210 375 169 347Z" fill="#22132e" stroke="#5c3970" stroke-width="9"/>
+<path d="M176 215 L210 191 L244 215 L236 314 L210 340 L184 314Z" fill="#30203c" stroke="#ff5abf" stroke-width="5"/>
+<path d="M156 212 L108 191 L94 244 L170 255Z" fill="#3b1c51" stroke="#7b4a9d" stroke-width="7"/><path d="M264 212 L312 191 L326 244 L250 255Z" fill="#423a12" stroke="#d9b739" stroke-width="7"/>
+<path d="M168 227 Q136 258 148 321 M252 227 Q284 258 272 321" stroke="#bc8d72" stroke-width="24" stroke-linecap="round"/>
+<path d="M184 348 L173 449 L194 486 M236 348 L247 449 L226 486" stroke="#281934" stroke-width="30" stroke-linecap="round"/>
+<!-- staff --> <path d="M279 355 L344 159" stroke="#53345c" stroke-width="15"/><circle cx="347" cy="146" r="26" fill="#f0f0f0" stroke="#663f78" stroke-width="7"/><path d="M336 140 Q347 124 358 140 Q347 158 336 140Z" fill="#ff4cc9"/><path d="M333 150 Q347 167 361 150" fill="none" stroke="#42d8ff" stroke-width="5"/>
+<!-- cloth ribbons built into costume --> <path d="M178 333 Q130 370 107 426" fill="none" stroke="#ff4c6b" stroke-width="8"/><path d="M210 344 Q210 399 188 451" fill="none" stroke="#ffd84d" stroke-width="8"/><path d="M242 333 Q290 370 313 426" fill="none" stroke="#41d7ff" stroke-width="8"/>
+</g></svg>

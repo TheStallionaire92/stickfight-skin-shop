@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-label="Holo Blade">
+<defs>
+      <linearGradient id="armor" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".28" stop-color="#69ded6"/><stop offset=".58" stop-color="#211f27"/><stop offset="1" stop-color="#08090d"/></linearGradient>
+      <linearGradient id="cloth" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#69ded6"/><stop offset=".5" stop-color="#241b29"/><stop offset="1" stop-color="#050609"/></linearGradient>
+      <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".18" stop-color="#c9d0d8"/><stop offset=".48" stop-color="#555f6c"/><stop offset=".72" stop-color="#171b21"/><stop offset="1" stop-color="#69ded6"/></linearGradient>
+      <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bcebe8"/><stop offset="1" stop-color="#805a49"/></linearGradient>
+      <radialGradient id="core"><stop offset="0" stop-color="#fff"/><stop offset=".25" stop-color="#ffffff"/><stop offset="1" stop-color="#69ded6" stop-opacity="0"/></radialGradient>
+      <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter>
+      <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity=".65"/></filter>
+    </defs>
+    <ellipse cx="210" cy="495" rx="112" ry="16" fill="#000" opacity=".38"/>
+    <ellipse cx="210" cy="325" rx="150" ry="168" fill="#5efff4" opacity="0.22" filter="url(#soft)"/>
+<g filter="url(#shadow)"><g opacity=".82"><ellipse cx="210" cy="150" rx="31" ry="36" fill="#173d42" stroke="#81fff8" stroke-width="5"/><path d="M191 149 H203 M217 149 H229" stroke="#fff" stroke-width="4"/><path d="M166 206 Q210 183 254 206 L245 337 Q210 356 175 337Z" fill="#18474a" stroke="#81fff8" stroke-width="6"/><path d="M171 225 Q139 253 150 319 M249 225 Q281 253 270 319" stroke="#4bc9c4" stroke-width="22" stroke-linecap="round"/><path d="M187 334 Q181 404 177 477" stroke="#17161b" stroke-width="27" stroke-linecap="round"/><path d="M233 334 Q239 404 243 477" stroke="#17161b" stroke-width="27" stroke-linecap="round"/><path d="M159 477 H195 L197 497 H151Z M225 477 H261 L269 497 H223Z" fill="#2ba4a2" stroke="#08090d" stroke-width="6"/></g><g opacity=".55"><path d="M120 180 H296 M103 222 H317 M110 267 H306 M95 312 H327 M113 362 H304" stroke="#81fff8" stroke-width="3" stroke-dasharray="18 10"/></g><ellipse cx="210" cy="273" rx="74" ry="130" fill="none" stroke="#81fff8" stroke-width="4" stroke-dasharray="12 8" opacity=".6"/><path d="M276 330 L367 207" stroke="#090a0d" stroke-width="23" stroke-linecap="round"/>
+    <path d="M276 330 L367 207" stroke="url(#steel)" stroke-width="15" stroke-linecap="round"/>
+    <path d="M276 330 L367 207" stroke="#81fff8" stroke-width="3" stroke-linecap="round" opacity=".8"/></g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-label="Knochenritter">
+<defs>
+      <linearGradient id="armor" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7f3e6"/><stop offset=".28" stop-color="#c9c2ae"/><stop offset=".58" stop-color="#211f27"/><stop offset="1" stop-color="#08090d"/></linearGradient>
+      <linearGradient id="cloth" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#c9c2ae"/><stop offset=".5" stop-color="#241b29"/><stop offset="1" stop-color="#050609"/></linearGradient>
+      <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".18" stop-color="#c9d0d8"/><stop offset=".48" stop-color="#555f6c"/><stop offset=".72" stop-color="#171b21"/><stop offset="1" stop-color="#c9c2ae"/></linearGradient>
+      <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8c4a0"/><stop offset="1" stop-color="#805a49"/></linearGradient>
+      <radialGradient id="core"><stop offset="0" stop-color="#fff"/><stop offset=".25" stop-color="#f7f3e6"/><stop offset="1" stop-color="#c9c2ae" stop-opacity="0"/></radialGradient>
+      <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter>
+      <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000" flood-opacity=".65"/></filter>
+    </defs>
+    <ellipse cx="210" cy="495" rx="112" ry="16" fill="#000" opacity=".38"/>
+    <ellipse cx="210" cy="325" rx="150" ry="168" fill="#fff3c8" opacity="0.22" filter="url(#soft)"/>
+<g filter="url(#shadow)"><path d="M172 145 Q175 105 210 96 Q245 105 248 145 L239 187 Q210 205 181 187Z" fill="#d7d0bd" stroke="#161616" stroke-width="8"/><path d="M185 149 L201 144 M219 144 L235 149" stroke="#161616" stroke-width="6"/><path d="M197 173 H223 M201 180 H219" stroke="#161616" stroke-width="4"/><path d="M165 209 Q210 178 255 209 L247 337 Q210 360 173 337Z" fill="#191919" stroke="#08090d" stroke-width="8"/><path d="M184 220 L210 202 L236 220 L232 302 L210 323 L188 302Z" fill="#3a3935" stroke="#d7d0bd" stroke-width="6"/>
+    <path d="M165 220 L131 197 L117 237 L165 247Z M255 220 L289 197 L303 237 L255 247Z" fill="#d7d0bd" stroke="#161616" stroke-width="7"/><path d="M166 233 Q132 263 145 325" stroke="#bfb9a8" stroke-width="25" stroke-linecap="round"/><path d="M254 233 Q288 263 275 325" stroke="#bfb9a8" stroke-width="25" stroke-linecap="round"/><path d="M184 333 L174 441 L194 477" stroke="#15171d" stroke-width="30" stroke-linecap="round"/><path d="M236 333 L246 441 L226 477" stroke="#15171d" stroke-width="30" stroke-linecap="round"/>
+        <path d="M173 375 L195 375 L191 425 L168 425Z M225 375 L247 375 L252 425 L229 425Z" fill="url(#armor)" stroke="#08090d" stroke-width="6"/>
+        <path d="M160 475 H205 L201 498 H151Z M215 475 H260 L269 498 H219Z" fill="url(#armor)" stroke="#08090d" stroke-width="6"/><path d="M143 208 L124 161 M277 208 L296 161" stroke="#d7d0bd" stroke-width="11"/><path d="M128 171 L112 149 M292 171 L308 149" stroke="#d7d0bd" stroke-width="8"/><path d="M279 340 L375 204" stroke="#090a0d" stroke-width="28" stroke-linecap="round"/>
+    <path d="M279 340 L375 204" stroke="url(#steel)" stroke-width="20" stroke-linecap="round"/>
+    <path d="M279 340 L375 204" stroke="#f7f3e6" stroke-width="3" stroke-linecap="round" opacity=".8"/></g>
+</svg>
