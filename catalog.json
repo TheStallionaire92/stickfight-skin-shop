@@ -726,5 +726,18 @@
     "artVersion": "2.0",
     "reworkedToday": false,
     "new20": true
+  },
+  {
+    "id": "griffterdrifter",
+    "name": "GriffterDrifter",
+    "category": "Legendary/Comedy",
+    "rarity": "Legendary",
+    "price": 140000,
+    "desc": "Grimmiger Rentner im Kampfrollstuhl mit verstärktem Gehstock, glühenden Rädern und eigener Signatur GRIFFTER DRIFT.",
+    "nr": 57,
+    "asset": "assets/fighters/57_griffterdrifter.svg",
+    "artVersion": "2.0 V29",
+    "reworkedToday": true,
+    "new20": true
   }
 ]

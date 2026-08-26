@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 520" role="img" aria-label="GriffterDrifter Legendary StickFight character">
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6edf5"/><stop offset=".18" stop-color="#737d8c"/><stop offset=".52" stop-color="#202733"/><stop offset="1" stop-color="#080b10"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff0a0"/><stop offset=".22" stop-color="#ffca45"/><stop offset=".62" stop-color="#d87813"/><stop offset="1" stop-color="#642900"/>
+    </linearGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4d0e18"/><stop offset=".4" stop-color="#1c0b11"/><stop offset="1" stop-color="#050608"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0b075"/><stop offset=".55" stop-color="#b86539"/><stop offset="1" stop-color="#71351f"/>
+    </linearGradient>
+    <radialGradient id="wheelGlow"><stop offset="0" stop-color="#ffefad"/><stop offset=".2" stop-color="#ffb72f"/><stop offset=".55" stop-color="#ff6c00"/><stop offset="1" stop-color="#ff6c00" stop-opacity="0"/></radialGradient>
+    <filter id="shadow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity=".85"/></filter>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="16"/></filter>
+  </defs>
+
+  <ellipse cx="280" cy="495" rx="190" ry="17" fill="#000" opacity=".5"/>
+  <ellipse cx="280" cy="400" rx="210" ry="105" fill="#ff7800" opacity=".08" filter="url(#soft)"/>
+
+  <g filter="url(#shadow)">
+    <!-- tattered back banner -->
+    <path d="M363 138 L431 112 L442 298 L406 283 L393 318 L367 290Z" fill="#120b10" stroke="#020307" stroke-width="10"/>
+    <path d="M376 158 Q402 132 425 154 L427 268 Q402 246 378 266Z" fill="#54131e" opacity=".72"/>
+    <path d="M392 181 Q405 166 419 181 Q407 177 405 193 Q402 177 392 181Z" fill="#d9dce2" opacity=".75"/>
+
+    <!-- wheelchair rear wheels -->
+    <g>
+      <circle cx="178" cy="390" r="91" fill="#05070a" stroke="#090b10" stroke-width="18"/>
+      <circle cx="178" cy="390" r="78" fill="none" stroke="#ff9220" stroke-width="12" filter="url(#glow)"/>
+      <circle cx="178" cy="390" r="63" fill="none" stroke="#333946" stroke-width="8"/>
+      <g stroke="#8993a1" stroke-width="4" opacity=".75"><path d="M178 327V453"/><path d="M115 390H241"/><path d="M134 346L222 434"/><path d="M222 346L134 434"/></g>
+      <circle cx="178" cy="390" r="15" fill="url(#gold)" stroke="#030406" stroke-width="6"/>
+      <path d="M150 391 Q178 352 208 389 Q181 378 179 416 Q172 381 150 391Z" fill="#ff9e21" stroke="#05070a" stroke-width="6"/>
+      <circle cx="382" cy="390" r="91" fill="#05070a" stroke="#090b10" stroke-width="18"/>
+      <circle cx="382" cy="390" r="78" fill="none" stroke="#ff9220" stroke-width="12" filter="url(#glow)"/>
+      <circle cx="382" cy="390" r="63" fill="none" stroke="#333946" stroke-width="8"/>
+      <g stroke="#8993a1" stroke-width="4" opacity=".75"><path d="M382 327V453"/><path d="M319 390H445"/><path d="M338 346L426 434"/><path d="M426 346L338 434"/></g>
+      <circle cx="382" cy="390" r="15" fill="url(#gold)" stroke="#030406" stroke-width="6"/>
+      <path d="M354 391 Q382 352 412 389 Q385 378 383 416 Q376 381 354 391Z" fill="#ff9e21" stroke="#05070a" stroke-width="6"/>
+    </g>
+
+    <!-- wheelchair frame and seat -->
+    <path d="M214 278 L200 405 M346 278 L360 405 M207 316 H353 M220 278 H340" fill="none" stroke="#05070a" stroke-width="24" stroke-linecap="round"/>
+    <path d="M214 278 L200 405 M346 278 L360 405 M207 316 H353 M220 278 H340" fill="none" stroke="url(#metal)" stroke-width="13" stroke-linecap="round"/>
+    <path d="M220 279 Q280 257 340 279 L332 323 Q280 340 228 323Z" fill="#0a0c10" stroke="#050607" stroke-width="8"/>
+    <path d="M228 309 Q280 326 332 309" fill="none" stroke="#8d1729" stroke-width="4" opacity=".7"/>
+    <path d="M190 291 H226 M334 291 H370" stroke="#11151c" stroke-width="20" stroke-linecap="round"/><path d="M190 291 H226 M334 291 H370" stroke="#737d8c" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- small front casters -->
+    <path d="M223 407 L218 454 M337 407 L342 454" stroke="#202733" stroke-width="10"/>
+    <circle cx="218" cy="465" r="26" fill="#080b10" stroke="#727d8b" stroke-width="7"/><circle cx="218" cy="465" r="12" fill="#ff8a12"/>
+    <circle cx="342" cy="465" r="26" fill="#080b10" stroke="#727d8b" stroke-width="7"/><circle cx="342" cy="465" r="12" fill="#ff8a12"/>
+
+    <!-- legs and plaid trousers, clearly separate anatomy -->
+    <path d="M241 317 Q230 352 230 388 L264 395 L279 331Z" fill="#45131c" stroke="#050507" stroke-width="8"/>
+    <path d="M319 317 Q330 352 330 388 L296 395 L281 331Z" fill="#45131c" stroke="#050507" stroke-width="8"/>
+    <g stroke="#c74334" stroke-width="5" opacity=".8"><path d="M238 338L270 343 M234 360L263 366 M322 338L290 343 M326 360L297 366"/><path d="M250 322L244 386 M310 322L316 386"/></g>
+    <path d="M223 381 Q244 376 264 389 L259 407 H220Z M337 381 Q316 376 296 389 L301 407 H340Z" fill="#171a20" stroke="#020307" stroke-width="7"/>
+
+    <!-- torso, vest and arms -->
+    <path d="M214 205 Q280 171 346 205 L333 318 Q280 340 227 318Z" fill="#1b1d23" stroke="#030406" stroke-width="11"/>
+    <path d="M234 207 Q280 191 326 207 L317 301 Q280 316 243 301Z" fill="#ded8c9" stroke="#15171d" stroke-width="6"/>
+    <path d="M221 206 L255 198 L263 310 L229 316Z M339 206 L305 198 L297 310 L331 316Z" fill="#111318" stroke="#050608" stroke-width="6"/>
+    <path d="M235 220 L249 230 M325 220 L311 230" stroke="#ff9b16" stroke-width="4" opacity=".7"/>
+    <path d="M227 229 Q183 244 158 293" fill="none" stroke="#050608" stroke-width="31" stroke-linecap="round"/><path d="M227 229 Q183 244 158 293" fill="none" stroke="url(#skin)" stroke-width="20" stroke-linecap="round"/>
+    <path d="M333 229 Q374 244 395 287" fill="none" stroke="#050608" stroke-width="31" stroke-linecap="round"/><path d="M333 229 Q374 244 395 287" fill="none" stroke="url(#skin)" stroke-width="20" stroke-linecap="round"/>
+    <path d="M143 285 Q160 272 176 291 L163 314 Q143 310 135 297Z" fill="#101217" stroke="#030406" stroke-width="7"/>
+    <path d="M384 280 Q401 269 416 288 L408 310 Q388 313 378 296Z" fill="#101217" stroke="#030406" stroke-width="7"/>
+
+    <!-- head, hair, beard -->
+    <circle cx="280" cy="145" r="48" fill="url(#skin)" stroke="#030406" stroke-width="11"/>
+    <path d="M232 139 Q221 111 248 85 Q280 61 319 84 Q343 104 329 141 Q314 113 280 113 Q246 113 232 139Z" fill="#181a20" stroke="#030406" stroke-width="9"/>
+    <path d="M236 105 Q280 73 331 103 L322 123 Q281 102 238 126Z" fill="#3a3f49" stroke="#050608" stroke-width="6"/>
+    <path d="M238 154 Q252 194 280 208 Q308 194 322 154 Q314 212 280 232 Q246 212 238 154Z" fill="#ece9e1" stroke="#090a0d" stroke-width="7"/>
+    <path d="M246 151 Q256 176 270 174 Q279 170 280 159 Q281 170 290 174 Q304 176 314 151 Q310 192 280 203 Q250 192 246 151Z" fill="#f6f3eb"/>
+    <path d="M247 142 L271 136 L276 148 L253 151Z M313 142 L289 136 L284 148 L307 151Z" fill="#07090c" stroke="#020304" stroke-width="4"/>
+    <path d="M253 145 L268 141" stroke="#ff3a28" stroke-width="5" filter="url(#glow)"/><path d="M307 145 L292 141" stroke="#ff3a28" stroke-width="5" filter="url(#glow)"/>
+    <path d="M267 164 Q280 170 293 164" fill="none" stroke="#542112" stroke-width="5"/>
+
+    <!-- pipe -->
+    <path d="M302 178 Q327 180 330 197" fill="none" stroke="#4b2a15" stroke-width="8" stroke-linecap="round"/><ellipse cx="333" cy="202" rx="12" ry="10" fill="#5a3018" stroke="#120a05" stroke-width="5"/>
+
+    <!-- cane weapon with horse head -->
+    <path d="M150 292 L96 455" stroke="#070405" stroke-width="26" stroke-linecap="round"/>
+    <path d="M150 292 L96 455" stroke="url(#gold)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M151 285 Q127 257 141 232 Q153 210 181 216 Q201 221 199 241 Q193 257 174 260 L160 275Z" fill="url(#gold)" stroke="#050306" stroke-width="8"/>
+    <path d="M168 222 L184 205 L186 229Z" fill="#c76a0c" stroke="#050306" stroke-width="5"/>
+    <path d="M181 235 Q193 239 187 246 Q178 251 169 245Z" fill="#080a0f"/>
+    <circle cx="177" cy="232" r="5" fill="#3bc9ff" filter="url(#glow)"/>
+    <path d="M92 452 L85 482" stroke="#f0c05b" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- horseshoe necklace -->
+    <path d="M267 224 Q280 244 293 224 M267 224 V238 M293 224 V238" fill="none" stroke="#ffcb45" stroke-width="5"/>
+
+    <!-- wheel spikes -->
+    <g fill="url(#metal)" stroke="#030406" stroke-width="4">
+      <path d="M93 355 L66 340 L96 376Z"/><path d="M92 425 L61 438 L101 407Z"/><path d="M467 355 L494 340 L464 376Z"/><path d="M468 425 L499 438 L459 407Z"/>
+    </g>
+  </g>
+
+  <!-- restrained electric accents -->
+  <g fill="none" stroke="#45baff" stroke-width="4" opacity=".72" filter="url(#glow)">
+    <path d="M115 282 L104 267 L117 251 L107 235"/><path d="M405 333 L420 320 L414 304 L431 289"/>
+  </g>
+</svg>
